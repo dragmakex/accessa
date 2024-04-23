@@ -1,11 +1,16 @@
 [
   {
-    "title": "Tella, A Hugo theme for Companies.",
-    "image": "img/slide/slide01.jpg"
+    "title": "ACCESSA, Accelerator of Success.",
+    "image": "img/slide/slide04.jpg",
+    "color": "text-black"
   },
   {
-    "title": "Sample text here...",
-    "image": "img/slide/slide02.jpg",
+    "title": "Your success will be one-of-a-kind. Our mission is to get you there.",
+    "image": "img/slide/slide03.jpg",
     "color": "text-black"
+  },
+  {
+    "title": "Stay ahead.",
+    "image": "img/slide/slide01.jpg"
   }
 ]

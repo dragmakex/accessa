@@ -23,6 +23,20 @@
       <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&#xA;Hugo makes use of a variety of open source projects including:&#xA;https://github.com/yuin/goldmark https://github.</description>
     </item>
     <item>
+      <title></title>
+      <link>http://localhost:1313/imprint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/imprint/</guid>
+      <description>Imprint ACCESSA GmbH&#xA;Talstrasse 24 8852 Altendorf, SZ&#xA;Switzerland&#xA;Email: info@accessa.ch&#xA;Phone: +41 76 687 8628</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/privacy-policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/privacy-policy/</guid>
+      <description>Privacy Policy Data Protection Statement of ACCESSA GmbH Version effective as of 01.09.2023&#xA;With this Data Protection Statement, we, the ACCESSA GmbH (hereinafter &amp;ldquo;ACCESSA GmbH&amp;rdquo;, &amp;ldquo;we&amp;rdquo; or &amp;ldquo;us&amp;rdquo;), describe how we collect and further process personal data. This Data Protection Statement is not necessarily a comprehensive description of our data processing. It is possible that other data protection statements or General Terms and Conditions, Conditions of Participation, or similar documents are applicable to specific circumstances.</description>
+    </item>
+    <item>
       <title>Contact</title>
       <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

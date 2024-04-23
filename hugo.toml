@@ -25,7 +25,7 @@ enableRobotsTXT = true
 
   [params.logo]
     main = "img/logo/logo.png"
-    alt = "Tella Logo"
+    alt = "ACCESSA Logo"
 
     # The size parameter is the class name of tailwindcss
     # https://tailwindcss.com/
@@ -40,14 +40,14 @@ enableRobotsTXT = true
 
   [params.homepage_meta_tags]
     meta_description = "A Hugo Theme for OSSProject, Companies, Organization..."
-    meta_og_title = "Tella"
+    meta_og_title = "ACCESSA"
     meta_og_type = "website"
-    meta_og_url = "https://tella.pages.dev"
+    meta_og_url = "https://accessa.ch"
     meta_og_image = "https://raw.githubusercontent.com/opera7133/tella/master/images/tn.png"
-    meta_og_description = "A Hugo Theme for OSSProject, Companies, Organization..."
+    meta_og_description = "Company website for ACCESSA GmbH"
     meta_twitter_card = "summary_large_image"
-    meta_twitter_site = "@username"
-    meta_twitter_creator = "@username"
+    meta_twitter_site = "@alxstai"
+    meta_twitter_creator = "@alxstai"
 
 [menu]
 
@@ -76,7 +76,17 @@ enableRobotsTXT = true
       weight = 1
 
   [[menu.footer]]
-    name = "Github"
-    url = "https://github.com/opera7133/tella"
-    pre = "<i class='icon-github text-2xl'></i>"
-      weight = 2
+    name = "Imprint"
+    url = "/imprint/"
+    weight = 2
+
+  [[menu.footer]]
+    name = "Privacy Policy"
+    url = "/privacy-policy/"
+    weight = 3
+
+  [[menu.footer]]
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/company/accessaconsulting"
+    pre = "<i class='fab fa-linkedin text-2xl'></i>"
+      weight = 4
