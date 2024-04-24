@@ -2,6 +2,8 @@ node_modules
 .env*
 themes-backup/
 
+content/expertise/*
+
 # Compiled Object files, Static and Dynamic libs (Shared Objects)
 *.o
 *.a

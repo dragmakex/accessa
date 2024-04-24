@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ACCESSA</title>
-    <link>http://localhost:55414/</link>
-    <description>Recent content on ACCESSA</description>
+    <title>Expertise on ACCESSA</title>
+    <link>http://localhost:55414/expertise/</link>
+    <description>Recent content in Expertise on ACCESSA</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:55414/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Apr 2024 12:33:45 +1000</lastBuildDate>
+    <atom:link href="http://localhost:55414/expertise/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Business Partnership</title>
       <link>http://localhost:55414/expertise/business-partnership/</link>
@@ -77,34 +77,6 @@
       <pubDate>Tue, 23 Apr 2024 12:33:45 +1000</pubDate>
       <guid>http://localhost:55414/expertise/project-mgmt-finance/</guid>
       <description>Offering expert project management services to oversee and deliver financial projects on time, within scope, and on budget. Our financial project management expertise ensures that all financial projects are executed with precision, from planning through to completion.</description>
-    </item>
-    <item>
-      <title>About Us</title>
-      <link>http://localhost:55414/about/</link>
-      <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:55414/about/</guid>
-      <description>At ACCESSA GmbH, we understand that the challenges our clients face are not unique, but the solutions we provide are. Your success will be one-of-a-kind, and our mission is to get you there. With deep industry knowledge and specialized expertise, we partner with you to achieve sustainable, measurable results.&#xA;Expertise Financial Management ACCESSA GmbH specializes in comprehensive financial management services designed to enhance operational efficiency and strategic insight. Our services include:</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:55414/imprint/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:55414/imprint/</guid>
-      <description>Imprint ACCESSA GmbH&#xA;Talstrasse 24 8852 Altendorf, SZ&#xA;Switzerland&#xA;Email: info@accessa.ch&#xA;Phone: +41 76 687 8628</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:55414/privacy-policy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:55414/privacy-policy/</guid>
-      <description>Privacy Policy Data Protection Statement of ACCESSA GmbH Version effective as of 01.09.2023&#xA;With this Data Protection Statement, we, the ACCESSA GmbH (hereinafter &amp;ldquo;ACCESSA GmbH&amp;rdquo;, &amp;ldquo;we&amp;rdquo; or &amp;ldquo;us&amp;rdquo;), describe how we collect and further process personal data. This Data Protection Statement is not necessarily a comprehensive description of our data processing. It is possible that other data protection statements or General Terms and Conditions, Conditions of Participation, or similar documents are applicable to specific circumstances.</description>
-    </item>
-    <item>
-      <title>Contact</title>
-      <link>http://localhost:55414/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:55414/contact/</guid>
-      <description>To contact us, please fill out the form below.</description>
     </item>
   </channel>
 </rss>
