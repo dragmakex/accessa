@@ -5,7 +5,7 @@ date = "2024-04-24"
 aliases = ["about-us", "about-accessa", "contact"]
 author = "ACCESSA GmbH"
 +++
-
+***
 
 At ACCESSA GmbH, we understand that the challenges our clients face are not unique, but the solutions we provide are. Your success will be one-of-a-kind, and our mission is to get you there. With deep industry knowledge and specialized expertise, we partner with you to achieve sustainable, measurable results.
 

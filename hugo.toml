@@ -51,11 +51,18 @@ enableRobotsTXT = true
 
 [menu]
 
-  #[menu.main]]
+  #[[menu.main]]
     #identifier = "expertise"
     #name = "Expertise"
     #url = "/expertise/"
     #weight = 1
+
+  [[menu.main]]
+    identifier = "team"
+    name = "Our Team"
+    url = "/team/"
+    weight = 2
+    
 
   [[menu.main]]
     identifier = "about"

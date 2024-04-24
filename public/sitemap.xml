@@ -2,53 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:55414/expertise/business-partnership/</loc>
+    <loc>http://localhost:55813/expertise/business-partnership/</loc>
     <lastmod>2024-04-23T12:33:45+10:00</lastmod>
   </url><url>
-    <loc>http://localhost:55414/expertise/financial-mgmt/</loc>
+    <loc>http://localhost:55813/expertise/financial-mgmt/</loc>
     <lastmod>2024-04-23T12:33:45+10:00</lastmod>
   </url><url>
-    <loc>http://localhost:55414/expertise/finance-process-control/</loc>
+    <loc>http://localhost:55813/team/</loc>
     <lastmod>2024-04-23T12:33:45+10:00</lastmod>
   </url><url>
-    <loc>http://localhost:55414/expertise/supply-chain/</loc>
+    <loc>http://localhost:55813/expertise/finance-process-control/</loc>
     <lastmod>2024-04-23T12:33:45+10:00</lastmod>
   </url><url>
-    <loc>http://localhost:55414/expertise/coaching/</loc>
+    <loc>http://localhost:55813/expertise/supply-chain/</loc>
     <lastmod>2024-04-23T12:33:45+10:00</lastmod>
   </url><url>
-    <loc>http://localhost:55414/expertise/financial-org/</loc>
+    <loc>http://localhost:55813/expertise/coaching/</loc>
     <lastmod>2024-04-23T12:33:45+10:00</lastmod>
   </url><url>
-    <loc>http://localhost:55414/expertise/mgmt-reporting-tools/</loc>
+    <loc>http://localhost:55813/expertise/financial-org/</loc>
     <lastmod>2024-04-23T12:33:45+10:00</lastmod>
   </url><url>
-    <loc>http://localhost:55414/expertise/project-mgmt/</loc>
+    <loc>http://localhost:55813/expertise/mgmt-reporting-tools/</loc>
     <lastmod>2024-04-23T12:33:45+10:00</lastmod>
   </url><url>
-    <loc>http://localhost:55414/expertise/business-relocation/</loc>
+    <loc>http://localhost:55813/expertise/project-mgmt/</loc>
     <lastmod>2024-04-23T12:33:45+10:00</lastmod>
   </url><url>
-    <loc>http://localhost:55414/expertise/project-mgmt-finance/</loc>
+    <loc>http://localhost:55813/expertise/business-relocation/</loc>
     <lastmod>2024-04-23T12:33:45+10:00</lastmod>
   </url><url>
-    <loc>http://localhost:55414/</loc>
+    <loc>http://localhost:55813/expertise/project-mgmt-finance/</loc>
+    <lastmod>2024-04-23T12:33:45+10:00</lastmod>
+  </url><url>
+    <loc>http://localhost:55813/</loc>
     <lastmod>2024-04-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:55414/about/</loc>
+    <loc>http://localhost:55813/about/</loc>
     <lastmod>2024-04-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:55414/expertise/</loc>
+    <loc>http://localhost:55813/expertise/</loc>
     <lastmod>2024-04-23T12:33:45+10:00</lastmod>
   </url><url>
-    <loc>http://localhost:55414/imprint/</loc>
+    <loc>http://localhost:55813/imprint/</loc>
   </url><url>
-    <loc>http://localhost:55414/privacy-policy/</loc>
+    <loc>http://localhost:55813/privacy-policy/</loc>
   </url><url>
-    <loc>http://localhost:55414/categories/</loc>
+    <loc>http://localhost:55813/categories/</loc>
   </url><url>
-    <loc>http://localhost:55414/contact/</loc>
+    <loc>http://localhost:55813/contact/</loc>
   </url><url>
-    <loc>http://localhost:55414/tags/</loc>
+    <loc>http://localhost:55813/tags/</loc>
   </url>
 </urlset>
