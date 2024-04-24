@@ -1,6 +1,6 @@
 baseURL = "https://accessa.ch"
 title = "ACCESSA"
-author = "Alexander Staikov"
+author = "ACCESSA GmbH"
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
@@ -39,7 +39,7 @@ enableRobotsTXT = true
     fontawesome = true
 
   [params.homepage_meta_tags]
-    meta_description = "A Hugo Theme for OSSProject, Companies, Organization..."
+    meta_description = "Company website for ACCESSA GmbH"
     meta_og_title = "ACCESSA"
     meta_og_type = "website"
     meta_og_url = "https://accessa.ch"
