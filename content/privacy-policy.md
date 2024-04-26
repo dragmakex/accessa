@@ -19,7 +19,7 @@ You can notify us of any data protection related concerns using the following co
 **ACCESSA GmbH**  
 Talstrasse 24  
 8852 Altendorf SZ  
-Schweiz  
+Switzerland  
 
 You can contact our data protection officer pursuant to art. 37 GDPR using the above contact details or under privacy@accessa.ch, who additionally is our representative in the EEA according to article 27 GDPR (if necessary).
 

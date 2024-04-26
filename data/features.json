@@ -20,13 +20,13 @@
       "icon": "fa-solid fa-user-tie"
   },
   {
-      "title": "Financial Management",
-      "description": "Strategic financial planning and risk management to optimize financial performance and enhance profitability.",
-      "icon": "fa-solid fa-coins"
-  },
-  {
-      "title": "Supply Chain Management",
-      "description": "Advanced solutions for managing the supply chain lifecycle, enhancing operational efficiency, and reducing costs through optimized logistics.",
-      "icon": "fa-solid fa-link"
-  }
+    "title": "Financial Management",
+    "description": "Strategic financial planning and risk management to optimize financial performance and enhance profitability.",
+    "icon": "fa-solid fa-coins"
+},
+{
+    "title": "Supply Chain Management",
+    "description": "Advanced solutions for managing the supply chain lifecycle, enhancing operational efficiency, and reducing costs through optimized logistics.",
+    "icon": "fa-solid fa-link"
+}
 ]

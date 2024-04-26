@@ -1,16 +1,17 @@
 [
   {
-    "title": "ACCESSA, Accelerator of Success.",
+    "title": "Accelerator of success.",
     "image": "img/slide/slide04.jpg",
     "color": "text-black"
   },
   {
-    "title": "Your success will be one-of-a-kind. Our mission is to get you there.",
-    "image": "img/slide/slide03.jpg",
-    "color": "text-black"
+    "title": "... we will get you there.",
+    "image": "img/slide/slide01.jpg",
+    "color": ""
   },
   {
     "title": "Stay ahead.",
-    "image": "img/slide/slide01.jpg"
+    "image": "img/slide/slide03.jpg",
+    "color": "text-black"
   }
 ]

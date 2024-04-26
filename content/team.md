@@ -19,7 +19,7 @@ Stoycho Gigov is the CEO of ACCESSA GmbH, bringing decades of leadership and exp
 
 ## Mariana Gigova
 ![Mariana Gigova](/img/mgigova.jpg)  
-**Role:** Supply Chain Expert  
+**Role:** Managing Partner Supply Chain  
 **LinkedIn Profile:** [Visit LinkedIn](https://www.linkedin.com/in/mariana-gigova-32196364/)
 
 Mariana Gigova is our renowned Supply Chain Expert. With a profound understanding of supply chain logistics and innovation, Mariana leads our efforts to streamline operations and enhance efficiency. Her expertise is crucial in developing solutions that transform challenges into opportunities for growth.
