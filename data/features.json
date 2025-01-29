@@ -5,28 +5,18 @@
       "icon": "fa-solid fa-computer"
   },
   {
-      "title": "Coaching",
-      "description": "Personalized coaching services to develop leadership skills, improve team dynamics, and achieve professional goals.",
-      "icon": "fa-solid fa-hand-fist"
-  },
-  {
       "title": "Project Management",
       "description": "Comprehensive project management solutions from initiation to closure, ensuring projects are delivered on time and within budget.",
       "icon": "fa-solid fa-diagram-project"
   },
   {
+      "title": "Coaching",
+      "description": "Personalized coaching services to develop leadership skills, improve team dynamics, and achieve professional goals.",
+      "icon": "fa-solid fa-hand-fist"
+  }, 
+  {
       "title": "Interims Management",
       "description": "Provision of interim management services to ensure continuity in key business functions.",
       "icon": "fa-solid fa-user-tie"
-  },
-  {
-    "title": "Financial Management",
-    "description": "Strategic financial planning and risk management to optimize financial performance and enhance profitability.",
-    "icon": "fa-solid fa-coins"
-},
-{
-    "title": "Supply Chain Management",
-    "description": "Advanced solutions for managing the supply chain lifecycle, enhancing operational efficiency, and reducing costs through optimized logistics.",
-    "icon": "fa-solid fa-link"
-}
+  }
 ]

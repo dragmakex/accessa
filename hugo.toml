@@ -32,7 +32,7 @@ enableRobotsTXT = true
     size = "h-14"
 
   [params.site]
-    name = "ACCESSA"
+    name = "ACCESSA GmbH"
 
   [params.icon]
     #If you want to use FontAwesome, set this parameter to true.
@@ -43,7 +43,7 @@ enableRobotsTXT = true
     meta_og_title = "ACCESSA"
     meta_og_type = "website"
     meta_og_url = "https://accessa.ch"
-    meta_og_image = "https://raw.githubusercontent.com/opera7133/tella/master/images/tn.png"
+    meta_og_image = "./images/tn.png"
     meta_og_description = "Company website for ACCESSA GmbH"
     meta_twitter_card = "summary_large_image"
     meta_twitter_site = "@alxstai"
@@ -51,29 +51,29 @@ enableRobotsTXT = true
 
 [menu]
 
-  #[[menu.main]]
-    #identifier = "expertise"
-    #name = "Expertise"
-    #url = "/expertise/"
-    #weight = 1
+  [[menu.main]]
+    identifier = "expertise"
+    name = "Expertise"
+    url = "/#expertise"
+    weight = 1
 
   [[menu.main]]
     identifier = "team"
-    name = "Our Team"
-    url = "/team/"
-    weight = 2
+    name = "About"
+    url = "/team"
+    weight = 3
     
 
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 3
+    identifier = "core"
+    name = "Core Areas"
+    url = "/core"
+    weight = 2
 
   [[menu.main]]
     identifier = "contact"
     name = "Contact"
-    url = "/contact/"
+    url = "/contact"
     weight = 4
 
   # Footer Menu
@@ -84,12 +84,12 @@ enableRobotsTXT = true
 
   [[menu.footer]]
     name = "Imprint"
-    url = "/imprint/"
+    url = "/imprint"
     weight = 2
 
   [[menu.footer]]
     name = "Privacy Policy"
-    url = "/privacy-policy/"
+    url = "/privacy-policy"
     weight = 3
 
   [[menu.footer]]

@@ -1,0 +1,40 @@
+{{ if .Site.Data.features }}
+<div class="bg-tlgray-200 py-6 md:py-10">
+    <div class="container mx-auto max-w-7xl">
+
+        <!-- Main title -->
+        <h2 id="expertise" class="text-3xl md:text-4xl font-bold text-center mb-4 py-4">Our Expertise</h2>
+        
+        <!-- Introductory sentence -->
+        <!-- <div class="mx-auto mb-6 max-w-3xl px-4 py-4">
+            <p class="text-center text-xl md:text-2xl">
+                As trustful business consultants we combine strategic insight 
+                with practical expertise to help your business excel in 
+                challenging markets.
+            </p>
+        </div> -->
+
+        <!-- Feature blocks -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {{ range .Site.Data.features }}
+                {{ if .link }}
+                <a href="{{ .link }}">
+                {{ end }}
+                <div
+                    class="bg-white text-center mx-2 px-4 py-10 flex flex-row justify-center items-center duration-300 transform h-full hover:-translate-y-1 hover:shadow-lg">
+                    <div class="p-1">
+                        {{ if .icon }}
+                        <span class="{{ .icon }} text-3xl"></span>
+                        {{ end }}
+                        <h2 class="text-2xl">{{ .title }}</h2>
+                        <p class="sans">{{ .description | markdownify }}</p>
+                    </div>
+                </div>
+                {{ if .link }}
+                </a>
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}
