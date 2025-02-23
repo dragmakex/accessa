@@ -97,3 +97,9 @@ enableRobotsTXT = true
     url = "https://www.linkedin.com/company/accessaconsulting"
     pre = "<i class='fab fa-linkedin text-2xl'></i>"
       weight = 4
+
+  [[menu.footer]]
+    name = "Email"
+    url = "mailto:info@accessa.ch"
+    pre = "<i class='fas fa-envelope text-2xl'></i>"
+      weight = 5

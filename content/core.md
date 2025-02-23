@@ -6,43 +6,41 @@ author = "ACCESSA GmbH"
 +++
 ***
 
-At ACCESSA GmbH, we understand that the challenges our clients face are not unique, but the solutions we provide are. Your success will be one-of-a-kind, and our mission is to get you there. With deep industry knowledge and specialized expertise, we partner with you to achieve sustainable, measurable results.
-
 
 ### Financial Management
 
-ACCESSA GmbH specializes in comprehensive financial management services designed to enhance operational efficiency and strategic insight. Our services include:
+Strategic planning and risk management to optimize financial performance and enhance profitability. ACCESSA GmbH specializes in comprehensive financial management services designed to enhance operational efficiency.
 
 - **Business Partnership**  
-  Acting as strategic advisors, we ensure that financial insights guide business decisions at every level.
+  Acting as strategic advisors, we ensure that financial insights guide to business decisions at every level.
 
 - **Financial and Process Control**  
-  Implementing rigorous controls to enhance the integrity of your financial processes.
+  Implementing rigorous financial control to enhance the integrity of your operational processes.
 
 - **Financial Organizations**  
-  Structuring your financial operations to support business objectives efficiently and effectively.
+  Structuring your financial operations to meet your business objectives efficiently.
 
 - **Management Reporting and Decision Tools**  
-  Providing the tools and reports necessary for high-level decision-making.
+  Implementing customized tools and reports to enable high-level decision-making for achieving your business goals.
 
-- **Business Relocation, Transformation, Integration**  
-  Managing the financial aspects of business changes and integrations smoothly and efficiently.
+- **Business Transformation and Integration**  
+  Managing the financial aspects of emerging business rationalizations.
 
 - **Project Management**  
-  Offering expert project management services to oversee and deliver projects on time, within scope, and on budget.
+  Offering expert project management services to oversee and deliver projects on time, within scope and budget.
 
 - **Intercultural Competence**  
   Bridging cultural gaps within global financial management practices to enhance team collaboration and business operations.
 
 ### Supply Chain Management
 
-Our supply chain management solutions are tailored to optimize efficiency and adaptability in your supply chain networks:
+Our supply chain management solutions are tailored to optimize the efficiency and the adaptability of your supply chain network.
 
 - **Order Management**  
-  Streamlining order processes to improve accuracy and customer satisfaction.
+  Implementing and streamlining a customer centric process to enable an error free, on time and in full delivery.
 
 - **Materials Management**  
-  Ensuring the right materials are in the right place at the right time, reducing costs and improving production cycles.
+  Ensuring that the right materials are in the right place at the right time. Opzimizing inventory and improving delivery service.
 
 - **Supply Network Planning**  
   Advanced planning solutions to enhance the visibility and responsiveness of your supply network.
@@ -50,14 +48,13 @@ Our supply chain management solutions are tailored to optimize efficiency and ad
 - **Production Scheduling**  
   Optimizing production schedules to maximize efficiency and meet demand.
 
-- **Customer Centricity**  
-  Aligning supply chain processes to focus on customer needs and enhance service delivery.
 
 - **Complexity Management and Process Design**  
   Simplifying processes and managing complexity to increase efficiency and reduce costs.
 
-- **Change Management**  
-  Leading change processes to ensure successful adaptation to new methods and practices within the supply chain.
+- **Customer Centricity**  
+  Aligning supply chain processes to meet customer needs and to increase service levels.
 
-At ACCESSA GmbH, we combine strategic insight with practical expertise to help your business excel in challenging markets and complex supply chains.
+- **Change Management**  
+  Helping organizations and teams to adapt smoothly and effectively to new conditions, processes or startegies.
 

@@ -28,4 +28,4 @@ _testmain.go
 *.exe
 *.test
 
-.DS_Store
+.DS_Store.DS_Store

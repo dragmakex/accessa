@@ -1,5 +1,11 @@
 module.exports = {
-  content: ["./**/*.html", "./**/*.md", "./config.toml"],
+  content: [
+    "./**/*.html",
+    "./**/*.md",
+    "./config.toml",
+    "./layouts/**/*.html", // Explicitly include layouts directory
+    "./content/**/*.md"    // Include content directory
+  ],
   theme: {
     extend: {
       colors: {
