@@ -2,19 +2,33 @@
     <div id="overlay">
         <ul class="text-center list-none text-white text-3xl">
             {{ range .Site.Menus.main }}
-            <li class="p-2">
-                <a href="{{ .URL | safeURL }}">
-                    <span>{{ .Name }}</span>
-                </a>
-            </li>
+                {{ if .HasChildren }}
+                    <li class="p-2 relative group">
+                        <span class="cursor-default">{{ .Name }}</span>
+                        <ul class="sub-menu hidden group-hover:block text-2xl">
+                            {{ range .Children }}
+                                <li class="p-2 hover:bg-gray-700">
+                                    <a href="{{ .URL | safeURL }}">
+                                        <span>{{ .Name }}</span>
+                                    </a>
+                                </li>
+                            {{ end }}
+                        </ul>
+                    </li>
+                {{ else }}
+                    <li class="p-2">
+                        <a href="{{ .URL | safeURL }}">
+                            <span>{{ .Name }}</span>
+                        </a>
+                    </li>
+                {{ end }}
             {{ end }}
         </ul>
     </div>
     <nav class="flex items-center justify-between flex-wrap bg-opacity-100 p-8">
         <div class="flex items-center flex-shrink-0 text-xl text-grey-900 mr-2 lg:mr-6">
             <a href="{{ .Site.BaseURL }}"><img alt="{{ .Site.Params.logo.alt }}"
-                    class="{{ .Site.Params.logo.size }} mr-3 w-44 h-8 lg:h-16 lg:w-80" src="{{ .Site.Params.logo.main | relURL }}"></a>
-
+                class="{{ .Site.Params.logo.size }} mr-3 w-44 h-8 lg:h-16 lg:w-80" src="{{ .Site.Params.logo.main | relURL }}"></a>
         </div>
         <div class="block">
             <div id="hamburgerbtn" class="flex cursor-pointer items-center p-6 rounded mopen">
@@ -25,6 +39,22 @@
                 </div>
             </div>
         </div>
-        
     </nav>
 </header>
+
+<style>
+/* Add these styles for the dropdown */
+.sub-menu {
+    margin-top: 0.5rem;
+    background-color: rgba(31, 41, 55, 0.95);
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .sub-menu {
+        margin-left: 1rem;
+        background-color: transparent;
+        display: block !important;
+    }
+}
+</style>
