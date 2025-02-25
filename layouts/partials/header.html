@@ -1,12 +1,5 @@
 <header>
     <div id="overlay" class="fixed inset-0 bg-black bg-opacity-90 z-50 overflow-y-auto hidden">
-      <div class="flex justify-end p-4">
-        <button id="closeMenu" class="text-white text-2xl p-2" aria-label="Close menu">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-        </button>
-      </div>
       <ul class="text-center list-none text-white text-3xl mt-8">
         {{ range .Site.Menus.main }}
         <li class="p-2">
@@ -176,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
     cleanUnwantedCharacters();
     setTimeout(cleanUnwantedCharacters, 100);
     const hamburgerbtn = document.getElementById('hamburgerbtn');
-    const closeBtn = document.getElementById('closeMenu');
+    // Close button removed
     const overlay = document.getElementById('overlay');
     const parentMenus = document.querySelectorAll('.parent-menu');
     
@@ -221,8 +214,18 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(removeUnwantedXCharacters, 100);
     });
     
-    closeBtn.addEventListener('click', function() {
-        overlay.classList.add('hidden');
+    // Close menu when clicking anywhere on the overlay
+    overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) {
+            overlay.classList.add('hidden');
+        }
+    });
+    
+    // Also close with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && !overlay.classList.contains('hidden')) {
+            overlay.classList.add('hidden');
+        }
     });
     
     // Handle parent menu clicks
