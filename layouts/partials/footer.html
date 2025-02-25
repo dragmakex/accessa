@@ -8,7 +8,6 @@
     hljs.initHighlightingOnLoad();
     hljs.initLineNumbersOnLoad();
     new ClipboardJS('.url');
-
     function OnClickURL() {
       Swal.fire({
         icon: 'success',
@@ -23,7 +22,6 @@
       var hamburger = document.getElementById("hamburgerbtn");
       var overlay = document.getElementById("overlay");
       var body = document.body;
-
       hamburger.addEventListener("click", function () {
         overlay.classList.toggle("open");
         hamburger.classList.toggle("is-open");
@@ -31,9 +29,35 @@
       });
     }
     toggleNav();
-
-    document.querySelector('.scroll-top').addEventListener('click', () => {
-      document.documentElement.scrollTop = 0;
+    
+    // Fix for the back-to-top button
+    document.addEventListener('DOMContentLoaded', function() {
+      // Try to find the element first
+      const scrollTopButton = document.querySelector('.scroll-top');
+      
+      if (scrollTopButton) {
+        // If it exists, add the event listener
+        scrollTopButton.addEventListener('click', function() {
+          document.documentElement.scrollTop = 0;
+        });
+      } else {
+        // If it doesn't exist, create it
+        const newScrollTopButton = document.createElement('a');
+        newScrollTopButton.className = 'scroll-top';
+        newScrollTopButton.href = '#';
+        newScrollTopButton.innerHTML = '<i class="fa fa-arrow-up"></i>';
+        newScrollTopButton.style.cssText = 'position: fixed; bottom: 20px; right: 20px; background-color: #333; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center; align-items: center; text-decoration: none; box-shadow: 0 2px 5px rgba(0,0,0,0.3);';
+        
+        document.body.appendChild(newScrollTopButton);
+        
+        newScrollTopButton.addEventListener('click', function(e) {
+          e.preventDefault();
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      }
     });
   </script>
   {{ if .Site.Params.googleFonts }}

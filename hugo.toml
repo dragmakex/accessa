@@ -10,7 +10,7 @@ enableRobotsTXT = true
 # Please enable this feature if the site is available in Japanese, Chinese or Korean.
 #hasCJKLanguage = true
 
-# If you're using Google Analytics, you can enable this feature.
+# If you're using Google nnnalytics, you can enable this feature.
 #googleAnalytics = "UA-12345678-1"
 
 # Disqus Comment System
@@ -29,7 +29,7 @@ enableRobotsTXT = true
 
     # The size parameter is the class name of tailwindcss
     # https://tailwindcss.com/
-    size = "h-14"
+    size = "h-16"
 
   [params.site]
     name = "ACCESSA GmbH"
@@ -58,18 +58,29 @@ enableRobotsTXT = true
     weight = 1
 
   [[menu.main]]
-    identifier = "team"
+    identifier = "about"
     name = "About"
-    url = "/team"
+    url = "javascript:void(0);"  # Changed to "#" so clicking "About" doesn't navigate away
     weight = 3
-    
+  
+  [[menu.main]]
+    name = "About Us"
+    url = "/about-us" 
+    parent = "about"
+    weight = 1
 
+  [[menu.main]]
+    name = "Our Team"
+    url = "/team"
+    parent = "about"
+    weight = 2
+    
   [[menu.main]]
     identifier = "core"
     name = "Core Areas"
     url = "/core"
     weight = 2
-
+    
   [[menu.main]]
     identifier = "contact"
     name = "Contact"

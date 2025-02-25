@@ -1,6 +1,6 @@
 ---
 title: "Our Team"
-aliases: ["about-us", "about-accessa", "about"]
+aliases: ["team", "our-team"]
 date: 2024-04-23T12:33:45+10:00
 draft: false
 featured: true

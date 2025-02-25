@@ -1,10 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>http://localhost:1313/team/</title>
-    <link rel="canonical" href="http://localhost:1313/team/">
-    <meta name="robots" content="noindex">
-    <meta charset="utf-8">
-    <meta http-equiv="refresh" content="0; url=http://localhost:1313/team/">
-  </head>
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<meta charset="utf-8">
+<title>ACCESSA | About Us</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href='/apple-touch-icon.png'>
+<link rel="icon" type="image/png" sizes="32x32" href='/favicon-32x32.png'>
+<link rel="icon" type="image/png" sizes="16x16" href='/favicon-16x16.png'>
+<link rel="manifest" href='/site.webmanifest'>
+
+<link href='/css/fa6.min.css' rel="stylesheet" type="text/css">
+
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<link href='/css/style.min.css' rel="stylesheet" type="text/css">
+<link rel="stylesheet" href='/css/custom.css'>
+
+
+<meta property="og:site_name" content="ACCESSA" />
+<meta property="og:title" content="About Us | ACCESSA" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:1313/about-us/" />
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="About Us">
+
+
+<meta property="og:image" content="http://localhost:1313/images/tn.png">
+
+<meta name="description" content="Meet ACCESSA GmbH." />
+<meta property="og:description" content="Meet ACCESSA GmbH." />
+<meta property="twitter:description" content="Meet ACCESSA GmbH." />
+
+
+</head>
+
+<body class="flex flex-col min-h-screen">
+  <main class="flex-grow"><header>
+    <div id="overlay" class="fixed inset-0 bg-black bg-opacity-90 z-50 overflow-y-auto hidden">
+      <div class="flex justify-end p-4">
+        <button id="closeMenu" class="text-white text-2xl p-2" aria-label="Close menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <ul class="text-center list-none text-white text-3xl mt-8">
+        
+        <li class="p-2">
+            
+            <a href="/#expertise" class="menu-link">
+                <span class="menu-text">Expertise</span>
+            </a>
+            
+        </li>
+        
+        <li class="p-2">
+            
+            <a href="/core" class="menu-link">
+                <span class="menu-text">Core Areas</span>
+            </a>
+            
+        </li>
+        
+        <li class="p-2">
+            
+            <div class="parent-menu cursor-pointer clean-text">
+                <span class="menu-text clean-text">About</span>
+                <span class="dropdown-arrow ml-2 clean-text">▼</span>
+            </div>
+            <ul class="submenu p-2 mt-2 hidden">
+                
+                <li class="p-1 text-xl">
+                    <a href="/about-us" class="menu-link">About Us</a>
+                </li>
+                
+                <li class="p-1 text-xl">
+                    <a href="/team" class="menu-link">Our Team</a>
+                </li>
+                
+            </ul>
+            
+        </li>
+        
+        <li class="p-2">
+            
+            <a href="/contact" class="menu-link">
+                <span class="menu-text">Contact</span>
+            </a>
+            
+        </li>
+        
+      </ul>    
+    </div>
+    <nav class="flex items-center justify-between flex-wrap bg-opacity-100 p-8">
+        <div class="flex items-center flex-shrink-0 text-xl text-grey-900 mr-6">
+            <a href="http://localhost:1313/"><img alt="ACCESSA Logo"
+                    class="h-16 mr-3 w-46 h-9 lg:h-12 lg:w-64" src="/img/logo/logo.jpg"></a>
+        </div>
+        <div class="block">
+            <div id="hamburgerbtn" class="flex cursor-pointer items-center w-10 h-10 p-6 rounded mopen">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<style>
+ 
+.clean-text::before,
+.clean-text::after {
+    content: none !important;
+    display: none !important;
+}
+
+.clean-text {
+    position: relative;
+}
+
+.clean-text > *::before,
+.clean-text > *::after {
+    content: none !important;
+    display: none !important;
+}
+.menu-text::after,
+.menu-text::before,
+.menu-link::after,
+.menu-link::before {
+    content: none !important;
+    display: none !important;
+}
+
+.menu-text,
+.menu-link {
+    position: relative;
+    display: inline-block;
+}
+
+ 
+.parent-menu::after,
+.parent-menu::before {
+    display: none !important;
+    content: none !important;
+}
+#overlay .submenu {
+    margin-left: 1rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-arrow {
+    font-size: 0.7em;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-arrow.open {
+    transform: rotate(180deg);
+}
+
+.parent-menu {
+    display: inline-flex;
+    align-items: center;
+}
+
+ 
+body nav::after,
+body .menu-item::after,
+body nav::before,
+body .menu-item::before,
+body nav *::before,
+body nav *::after {
+    content: none !important;
+    display: none !important;
+}
+
+ 
+body nav *:not(#closeMenu):not(#hamburgerbtn)::before,
+body nav *:not(#closeMenu):not(#hamburgerbtn)::after {
+    content: none !important;
+    display: none !important;
+}
+
+ 
+nav ul:not(#overlay ul) {
+    font-size: 0 !important;
+}
+
+ 
+nav > *:not(div):not(.block):not(.flex):not(#hamburgerbtn):empty,
+nav > *:only-child {
+    display: none !important;
+}
+
+ 
+nav *:empty::before, 
+nav *:empty::after {
+    display: none !important;
+    content: none !important;
+}
+
+ 
+nav {
+    position: relative;
+}
+
+ 
+nav::after {
+    content: "" !important;
+    display: block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    
+    function cleanUnwantedCharacters() {
+        const parentMenus = document.querySelectorAll('.parent-menu');
+        parentMenus.forEach(menu => {
+            
+            Array.from(menu.childNodes).forEach(node => {
+                if (node.nodeType === 3) { 
+                    node.textContent = node.textContent.replace(/[×x✕]/g, '');
+                }
+            });
+        });
+    }
+    
+    
+    cleanUnwantedCharacters();
+    setTimeout(cleanUnwantedCharacters, 100);
+    const hamburgerbtn = document.getElementById('hamburgerbtn');
+    const closeBtn = document.getElementById('closeMenu');
+    const overlay = document.getElementById('overlay');
+    const parentMenus = document.querySelectorAll('.parent-menu');
+    
+    
+    const removeUnwantedXCharacters = function() {
+        
+        const nav = document.querySelector('nav');
+        if (nav) {
+            const walker = document.createTreeWalker(
+                nav,
+                NodeFilter.SHOW_TEXT,
+                null,
+                false
+            );
+            
+            
+            const textNodes = [];
+            let currentNode;
+            while (currentNode = walker.nextNode()) {
+                textNodes.push(currentNode);
+            }
+            
+            
+            textNodes.forEach(node => {
+                const text = node.nodeValue.trim();
+                if (text === 'x' || text === '×' || text === '✕' || text.length === 1) {
+                    
+                    node.nodeValue = '';
+                }
+            });
+        }
+    };
+    
+    
+    removeUnwantedXCharacters();
+    setTimeout(removeUnwantedXCharacters, 100);
+    setTimeout(removeUnwantedXCharacters, 500);
+    
+    hamburgerbtn.addEventListener('click', function() {
+        overlay.classList.remove('hidden');
+        
+        setTimeout(removeUnwantedXCharacters, 100);
+    });
+    
+    closeBtn.addEventListener('click', function() {
+        overlay.classList.add('hidden');
+    });
+    
+    
+    parentMenus.forEach(function(parentMenu) {
+        parentMenu.addEventListener('click', function() {
+            
+            const arrow = this.querySelector('.dropdown-arrow');
+            arrow.classList.toggle('open');
+            
+            
+            const submenu = this.nextElementSibling;
+            submenu.classList.toggle('hidden');
+            
+            
+            setTimeout(removeUnwantedXCharacters, 100);
+        });
+    });
+    
+    
+    const observer = new MutationObserver(function(mutations) {
+        removeUnwantedXCharacters();
+    });
+    
+    
+    observer.observe(document.body, { 
+        childList: true, 
+        subtree: true,
+        characterData: true
+    });
+});
+</script>
+<div class="scroll-top rounded-full">
+      <span class="icon-keyboard_arrow_up text-2xl"></span>
+    </div>
+<div class="mx-auto my-10 max-w-6xl">
+  <div class="mx-3 col-span-3 lg:col-span-2 px-2">
+    <h1 class="title text-5xl mb-4">About Us</h1>
+    <div class="content prose md:prose-lg lg:prose-xl max-w-none py-1"><hr>
+<p>ACCESSA GmbH has been founded in canton Schwyz, in the metropolitan area surrounding Zürich and is successfully serving as management consulting company customers from the DACH region.</p>
+<p><img src="/img/schwyz.jpg" alt="Canton Schwyz"></p>
+<hr>
+</div>
+  </div>
+</div>
+
+  </main><footer class="bg-tlgray-100">
+  
+  <script src='/js/clipboard.min.js'></script>
+  <script src='/js/highlight.min.js'></script>
+  <script src='/js/highlightjs-line-numbers.min.js'></script>
+  <script src='/js/sweetalert2.min.js'></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+    hljs.initLineNumbersOnLoad();
+    new ClipboardJS('.url');
+    function OnClickURL() {
+      Swal.fire({
+        icon: 'success',
+        title: 'Copied!',
+        text: 'Copied the URL and title.'
+      })
+    }
+  </script>
+  
+  <script>
+    function toggleNav() {
+      var hamburger = document.getElementById("hamburgerbtn");
+      var overlay = document.getElementById("overlay");
+      var body = document.body;
+      hamburger.addEventListener("click", function () {
+        overlay.classList.toggle("open");
+        hamburger.classList.toggle("is-open");
+        body.classList.toggle("scroll-lock");
+      });
+    }
+    toggleNav();
+    
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      
+      const scrollTopButton = document.querySelector('.scroll-top');
+      
+      if (scrollTopButton) {
+        
+        scrollTopButton.addEventListener('click', function() {
+          document.documentElement.scrollTop = 0;
+        });
+      } else {
+        
+        const newScrollTopButton = document.createElement('a');
+        newScrollTopButton.className = 'scroll-top';
+        newScrollTopButton.href = '#';
+        newScrollTopButton.innerHTML = '<i class="fa fa-arrow-up"></i>';
+        newScrollTopButton.style.cssText = 'position: fixed; bottom: 20px; right: 20px; background-color: #333; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center; align-items: center; text-decoration: none; box-shadow: 0 2px 5px rgba(0,0,0,0.3);';
+        
+        document.body.appendChild(newScrollTopButton);
+        
+        newScrollTopButton.addEventListener('click', function(e) {
+          e.preventDefault();
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      }
+    });
+  </script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet" />
+  
+  <div class="flex items-center justify-between flex-wrap bg-gray-800 p-8 text-white">
+    <div class="items-center text-xl text-grey-900 mr-6">
+      <a href="/" class="text-gray-300 hover:text-white">ACCESSA GmbH</a> 
+    </div>
+    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto" id="mobileMenu">
+      <div class="text-lg lg:flex-grow">
+      </div>
+      <div class="flex flex-row items-center text-lg">
+        
+        <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-8">
+          
+           
+          
+        </a>
+        
+        <a href="/imprint" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-8">
+          
+           
+          Imprint
+           
+          
+        </a>
+        
+        <a href="/privacy-policy" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-8">
+          
+           
+          Privacy Policy
+           
+          
+        </a>
+        
+        <a href="https://www.linkedin.com/company/accessaconsulting" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-8">
+          
+          <i class='fab fa-linkedin text-2xl'></i>
+          
+        </a>
+        
+        <a href="mailto:info@accessa.ch" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-8">
+          
+          <i class='fas fa-envelope text-2xl'></i>
+          
+        </a>
+        
+      </div>
+    </div>
+  </div>
+  <div class="copy pl-8 py-5 bg-tlgray-700 text-white text-sm">
+    &copy; ACCESSA GmbH 2025 All Rights Reserved.
+  </div>
+</footer>
+</body>
+
 </html>
