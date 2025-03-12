@@ -11,6 +11,6 @@ description: "Meet ACCESSA GmbH."
 
 ACCESSA GmbH has been founded in canton Schwyz, in the metropolitan area surrounding Zürich and is successfully serving as management consulting company customers from the DACH region.
 
-![Canton Schwyz](/img/schwyz.jpg)
+![Canton Schwyz](/img/schweiz.jpg)
 
 ***
