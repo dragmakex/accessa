@@ -3,4 +3,45 @@
  You can change the article headings, fonts, colors, etc.
 */
 
+/* Reduce font size for content page titles */
+.title {
+    font-size: 2rem !important; /* Smaller title size */
+    line-height: 1.2;
+}
+
+/* Adjust content font sizes */
+.content.prose {
+    font-size: 0.95rem;
+}
+
+.content.prose h1 {
+    font-size: 1.8rem;
+}
+
+.content.prose h2 {
+    font-size: 1.5rem;
+}
+
+.content.prose h3 {
+    font-size: 1.25rem;
+}
+
+/* Ensure content looks good on all devices */
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.75rem !important;
+    }
+    
+    .content.prose h1 {
+        font-size: 1.5rem;
+    }
+    
+    .content.prose h2 {
+        font-size: 1.25rem;
+    }
+    
+    .content.prose h3 {
+        font-size: 1.1rem;
+    }
+}
 
