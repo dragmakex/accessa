@@ -68,6 +68,8 @@
     position: relative;
     width: 20px;
     height: 16px;
+    font-weight: normal; /* Ensure consistent font weight */
+    font-style: normal; /* Prevent any font style changes */
 }
 
 .hamburger-icon span {
@@ -78,18 +80,25 @@
     background-color: #000;
     border-radius: 2px;
     transition: all 0.3s ease;
+    font-weight: normal; /* Ensure consistent font weight for all hamburger lines */
 }
 
 .hamburger-icon span:nth-child(1) {
     top: 0;
+    height: 2px; /* Ensure all lines have the same height */
+    font-weight: normal; /* Prevent potential font-weight issues */
 }
 
 .hamburger-icon span:nth-child(2) {
     top: 7px;
+    height: 2px; /* Ensure all lines have the same height */
+    font-weight: normal; /* Prevent potential font-weight issues */
 }
 
 .hamburger-icon span:nth-child(3) {
     top: 14px;
+    height: 2px; /* Ensure all lines have the same height */
+    font-weight: normal; /* Prevent potential font-weight issues */
 }
 
 /* X animation when menu is open */
