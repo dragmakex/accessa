@@ -6,6 +6,7 @@ draft: false
 featured: true
 weight: 1
 description: "Meet the experts behind ACCESSA GmbH."
+layout: "team"
 ---
 ***
 

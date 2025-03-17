@@ -1,343 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-<meta charset="utf-8">
-<title>ACCESSA | Our Team</title>
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link rel="apple-touch-icon" sizes="180x180" href='/apple-touch-icon.png'>
-<link rel="icon" type="image/png" sizes="32x32" href='/favicon-32x32.png'>
-<link rel="icon" type="image/png" sizes="16x16" href='/favicon-16x16.png'>
-<link rel="manifest" href='/site.webmanifest'>
-
-<link href='/css/fa6.min.css' rel="stylesheet" type="text/css">
-
-
-
-<link rel="stylesheet" href="/css/style.css">
-
-
-<link href='/css/style.min.css' rel="stylesheet" type="text/css">
-<link rel="stylesheet" href='/css/custom.css'>
-
-<meta property="og:site_name" content="ACCESSA" />
-<meta property="og:title" content="Our Team | ACCESSA" />
+{{ define "meta_tags" }}
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/team/" />
+<meta property="og:url" content="{{ .Permalink }}" />
 <meta name="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="Our Team">
+<meta property="twitter:title" content="{{ .Title }}">
 
+{{ if .Params.image }}
+{{ with .Params.image }}
+<meta property="og:image" content="{{ . | absURL }}">
+{{ end }}
+{{ else }}
+<meta property="og:image" content="{{ .Site.Params.homepage_meta_tags.meta_og_image | absURL }}">
+{{ end }}
 
-<meta property="og:image" content="http://localhost:1313/images/tn.png">
+{{- if .Description }}
+<meta name="description" content="{{ .Description }}" />
+<meta property="og:description" content="{{ .Description }}" />
+<meta property="twitter:description" content="{{ .Description }}" />
+{{- else if .Summary }}
+<meta name="description" content="{{ .Summary }}" />
+<meta property="og:description" content="{{ .Summary }}" />
+<meta property="twitter:description" content="{{ .Summary }}" />
+{{- else if .Site.Params.description }}
+<meta name="description" content="{{ .Site.Params.description }}" />
+<meta property="og:description" content="{{ .Site.Params.description }}" />
+<meta property="twitter:description" content="{{ .Site.Params.description }}" />
+{{- end }}
+{{ end }}
 
-<meta name="description" content="Meet the experts behind ACCESSA GmbH." />
-<meta property="og:description" content="Meet the experts behind ACCESSA GmbH." />
-<meta property="twitter:description" content="Meet the experts behind ACCESSA GmbH." />
-
-</head>
-
-<body class="flex flex-col min-h-screen">
-  <main class="flex-grow"><header class="relative">
-    
-    <nav class="flex items-center justify-between flex-wrap bg-opacity-100 p-8">
-        <div class="flex items-center flex-shrink-0 text-xl text-grey-900 mr-6">
-            <a href="http://localhost:1313/"><img alt="ACCESSA Logo"
-                    class="h-16 mr-3 w-46 h-9 lg:h-12 lg:w-64" src="/img/logo/logo.jpg"></a>
-        </div>
-        <button id="hamburger-button" class="hamburger-btn" aria-label="Toggle Menu" aria-expanded="false">
-            <div class="hamburger-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </button>
-    </nav>
-
-    
-    <div id="slide-menu" class="slide-menu">
-        <div class="slide-menu-content">
-            <ul class="menu-items">
-                
-                <li class="menu-item">
-                    
-                    <a href="/#expertise" class="menu-link">
-                        <span class="menu-text">Expertise</span>
-                    </a>
-                    
-                </li>
-                
-                <li class="menu-item">
-                    
-                    <a href="/core" class="menu-link">
-                        <span class="menu-text">Core Areas</span>
-                    </a>
-                    
-                </li>
-                
-                <li class="menu-item">
-                    
-                    <div class="parent-menu">
-                        <span class="menu-text">About</span>
-                        
-                        <span class="dropdown-arrow-placeholder"></span>
-                        
-                    </div>
-                    <ul class="submenu hidden">
-                        
-                        <li class="submenu-item">
-                            <a href="/about-us" class="menu-link">About Us</a>
-                        </li>
-                        
-                        <li class="submenu-item">
-                            <a href="/team" class="menu-link">Our Team</a>
-                        </li>
-                        
-                    </ul>
-                    
-                </li>
-                
-                <li class="menu-item">
-                    
-                    <a href="/contact" class="menu-link">
-                        <span class="menu-text">Contact</span>
-                    </a>
-                    
-                </li>
-                
-            </ul>
-        </div>
-    </div>
-</header>
-
-<style>
- 
-.hamburger-btn {
-    position: relative;
-    z-index: 1001;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 36px;
-    height: 36px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-}
-
-.hamburger-icon {
-    position: relative;
-    width: 20px;
-    height: 16px;
-    font-weight: normal;  
-    font-style: normal;  
-}
-
-.hamburger-icon span {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #000;
-    border-radius: 2px;
-    transition: all 0.3s ease;
-    font-weight: normal;  
-}
-
-.hamburger-icon span:nth-child(1) {
-    top: 0;
-    height: 2px;  
-    font-weight: normal;  
-}
-
-.hamburger-icon span:nth-child(2) {
-    top: 7px;
-    height: 2px;  
-    font-weight: normal;  
-}
-
-.hamburger-icon span:nth-child(3) {
-    top: 14px;
-    height: 2px;  
-    font-weight: normal;  
-}
-
- 
-.hamburger-btn.is-open .hamburger-icon span {
-    background-color: #fff;
-}
-
-.hamburger-btn.is-open .hamburger-icon span:nth-child(1) {
-    transform: rotate(45deg);
-    top: 7px;
-}
-
-.hamburger-btn.is-open .hamburger-icon span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger-btn.is-open .hamburger-icon span:nth-child(3) {
-    transform: rotate(-45deg);
-    top: 7px;
-}
-
- 
-.slide-menu {
-    position: fixed;
-    top: 0;
-    right: -300px;
-    width: 300px;
-    height: 100%;
-    background-color: #248ac7;
-    z-index: 1000;
-    transition: transform 0.3s ease-in-out;
-    overflow-y: auto;
-}
-
-.slide-menu.open {
-    transform: translateX(-300px);
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.slide-menu-content {
-    padding: 80px 30px 30px;
-}
-
- 
-.menu-items {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu-item {
-    margin-bottom: 20px;
-}
-
-.menu-link,
-.parent-menu {
-    color: white;
-    font-size: 1.25rem;
-    text-decoration: none;
-    display: block;
-    padding: 8px 0;
-    transition: opacity 0.2s;
-}
-
-.menu-link:hover,
-.parent-menu:hover {
-    opacity: 0.8;
-}
-
-.parent-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-}
-
-.dropdown-arrow, .dropdown-arrow-placeholder {
-    font-size: 0.7em;
-    transition: transform 0.3s ease;
-    margin-left: 8px;
-}
-
-.dropdown-arrow-placeholder {
-    width: 12px;  
-    display: inline-block;
-    visibility: hidden;
-}
-
-.dropdown-arrow.open {
-    transform: rotate(180deg);
-}
-
-.submenu {
-    margin-top: 5px;
-    margin-left: 15px;
-    border-left: 1px solid rgba(255, 255, 255, 0.3);
-    padding-left: 15px;
-}
-
-.submenu-item {
-    margin-top: 10px;
-}
-
-.submenu-item .menu-link {
-    font-size: 1rem;
-}
-
- 
-.hidden {
-    display: none;
-}
-</style>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburgerBtn = document.getElementById('hamburger-button');
-    const slideMenu = document.getElementById('slide-menu');
-    const parentMenus = document.querySelectorAll('.parent-menu');
-    
-    
-    hamburgerBtn.addEventListener('click', function() {
-        hamburgerBtn.classList.toggle('is-open');
-        slideMenu.classList.toggle('open');
-        
-        
-        const isExpanded = hamburgerBtn.classList.contains('is-open');
-        hamburgerBtn.setAttribute('aria-expanded', isExpanded);
-        
-        
-        if (isExpanded) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = '';
-        }
-    });
-    
-    
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && slideMenu.classList.contains('open')) {
-            hamburgerBtn.classList.remove('is-open');
-            slideMenu.classList.remove('open');
-            hamburgerBtn.setAttribute('aria-expanded', false);
-            document.body.style.overflow = '';
-        }
-    });
-    
-    
-    parentMenus.forEach(function(parentMenu) {
-        parentMenu.addEventListener('click', function() {
-            
-            const arrow = this.querySelector('.dropdown-arrow');
-            if (arrow) {
-                arrow.classList.toggle('open');
-            }
-            
-            
-            const submenu = this.nextElementSibling;
-            submenu.classList.toggle('hidden');
-        });
-    });
-    
-    
-    const menuLinks = slideMenu.querySelectorAll('.menu-link');
-    menuLinks.forEach(function(link) {
-        link.addEventListener('click', function() {
-            hamburgerBtn.classList.remove('is-open');
-            slideMenu.classList.remove('open');
-            hamburgerBtn.setAttribute('aria-expanded', false);
-            document.body.style.overflow = '';
-        });
-    });
-});
-</script><div class="scroll-top rounded-full">
-      <span class="icon-keyboard_arrow_up text-2xl"></span>
-    </div>
+{{ define "main" }}
 <div class="mx-auto my-10 max-w-6xl">
   <div class="mx-3 px-2">
-    <h1 class="title text-3xl mb-10 text-center" style="font-size: 1.875rem !important;">Our Team</h1>
+    <h1 class="title text-3xl mb-10 text-center" style="font-size: 1.875rem !important;">{{.Title}}</h1>
     
     <p class="text-center p-6 mb-28 max-w-3xl mx-auto" style="font-size: 1.125rem;">
       At ACCESSA, our talented team is dedicated to delivering exceptional service and expertise. 
@@ -345,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     </p>
     
     <div class="team-grid">
-      
+      <!-- Stoycho Gigov -->
       <div class="team-card" onclick="toggleBio('stoycho')">
         <div class="team-image">
           <img src="/img/stgigov.jpg" alt="Stoycho Gigov">
@@ -353,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
       </div>
       
-      
+      <!-- Mariana Gigova -->
       <div class="team-card" onclick="toggleBio('mariana')">
         <div class="team-image">
           <img src="/img/mgigova.jpg" alt="Mariana Gigova">
@@ -361,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
       </div>
       
-      
+      <!-- Alexander Staikov -->
       <div class="team-card" onclick="toggleBio('alexander')">
         <div class="team-image">
           <img src="/img/as.jpg" alt="Alexander Staikov">
@@ -370,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
     </div>
     
-    
+    <!-- Bios (Hidden by default) -->
     <div id="bio-stoycho" class="team-bio">
       <div class="bio-header">
         <h2>Stoycho Gigov</h2>
@@ -499,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <style>
-   
+  /* Team grid layout */
   .team-grid {
     display: flex;
     justify-content: center;
@@ -509,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function() {
     max-width: 1200px;
   }
   
-   
+  /* Team card styling */
   .team-card {
     width: 280px;
     height: 280px;
@@ -565,7 +260,7 @@ document.addEventListener('DOMContentLoaded', function() {
     opacity: 1;
   }
   
-   
+  /* Responsive adjustments for team grid */
   @media (max-width: 768px) {
     .team-grid {
       gap: 2rem;
@@ -584,7 +279,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
   
-   
+  /* Bio styling */
   .team-bio {
     display: none;
     position: fixed;
@@ -593,7 +288,7 @@ document.addEventListener('DOMContentLoaded', function() {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.85);
-    z-index: 9999;  
+    z-index: 9999; /* Ensure it's above everything else */
     padding: 1rem;
     overflow-y: auto;
   }
@@ -645,14 +340,14 @@ document.addEventListener('DOMContentLoaded', function() {
     max-width: 1000px;
     margin: 0 auto;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    position: relative;  
-    z-index: 10000;  
-    pointer-events: auto;  
+    position: relative; /* Ensure it's above the backdrop */
+    z-index: 10000; /* Higher than the modal backdrop */
+    pointer-events: auto; /* Ensure the content is always clickable */
   }
   
   .bio-image img {
     width: 100%;
-    border-radius: 8px;  
+    border-radius: 8px; /* Square image to match cards */
     aspect-ratio: 1/1;
     object-fit: cover;
     object-position: center;
@@ -734,7 +429,7 @@ document.addEventListener('DOMContentLoaded', function() {
     transform: translateY(-2px);
   }
   
-   
+  /* Enhanced responsive adjustments */
   @media (max-width: 900px) {
     .bio-content {
       grid-template-columns: 1fr 1.5fr;
@@ -785,26 +480,26 @@ document.addEventListener('DOMContentLoaded', function() {
 </style>
 
 <script>
-  
+  // Function to prevent background interaction and scrolling
   function disableBackgroundInteraction() {
     document.body.style.overflow = 'hidden';
     
-    
+    // Add an attribute to the body to help with CSS targeting
     document.body.setAttribute('data-modal-open', 'true');
     
-    
+    // Ensure header and navigation are not clickable
     const header = document.querySelector('header');
     if (header) {
       header.style.pointerEvents = 'none';
     }
   }
   
-  
+  // Function to restore background interaction
   function enableBackgroundInteraction() {
     document.body.style.overflow = '';
     document.body.removeAttribute('data-modal-open');
     
-    
+    // Re-enable header and navigation
     const header = document.querySelector('header');
     if (header) {
       header.style.pointerEvents = '';
@@ -818,18 +513,18 @@ document.addEventListener('DOMContentLoaded', function() {
       bio.style.display = 'none';
       enableBackgroundInteraction();
     } else {
-      
+      // Hide all bios first
       document.querySelectorAll('.team-bio').forEach(element => {
         element.style.display = 'none';
       });
       
-      
+      // Show the selected bio
       bio.style.display = 'block';
       
-      
+      // Disable background interaction
       disableBackgroundInteraction();
       
-      
+      // Make sure the close button is clickable
       const closeBtn = bio.querySelector('.close-bio');
       if (closeBtn) {
         closeBtn.style.pointerEvents = 'auto';
@@ -837,7 +532,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
   
-  
+  // Close bio when ESC key is pressed
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
       document.querySelectorAll('.team-bio').forEach(element => {
@@ -847,13 +542,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
   
-  
+  // Properly handle clicks on the modal backdrop to close it
   document.addEventListener('DOMContentLoaded', function() {
     const bios = document.querySelectorAll('.team-bio');
     
     bios.forEach(bio => {
       bio.addEventListener('click', function(e) {
-        
+        // Close the bio if clicking outside the content
         if (e.target === bio) {
           bio.style.display = 'none';
           enableBackgroundInteraction();
@@ -862,122 +557,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 </script>
-
-  </main><footer class="bg-tlgray-100">
-  
-  <script src='/js/clipboard.min.js'></script>
-  <script src='/js/highlight.min.js'></script>
-  <script src='/js/highlightjs-line-numbers.min.js'></script>
-  <script src='/js/sweetalert2.min.js'></script>
-  <script>
-    hljs.initHighlightingOnLoad();
-    hljs.initLineNumbersOnLoad();
-    new ClipboardJS('.url');
-    function OnClickURL() {
-      Swal.fire({
-        icon: 'success',
-        title: 'Copied!',
-        text: 'Copied the URL and title.'
-      })
-    }
-  </script>
-  
-  <script>
-    function toggleNav() {
-      var hamburger = document.getElementById("hamburgerbtn");
-      var overlay = document.getElementById("overlay");
-      var body = document.body;
-      hamburger.addEventListener("click", function () {
-        overlay.classList.toggle("open");
-        hamburger.classList.toggle("is-open");
-        body.classList.toggle("scroll-lock");
-      });
-    }
-    toggleNav();
-    
-    
-    document.addEventListener('DOMContentLoaded', function() {
-      
-      const scrollTopButton = document.querySelector('.scroll-top');
-      
-      if (scrollTopButton) {
-        
-        scrollTopButton.addEventListener('click', function() {
-          document.documentElement.scrollTop = 0;
-        });
-      } else {
-        
-        const newScrollTopButton = document.createElement('a');
-        newScrollTopButton.className = 'scroll-top';
-        newScrollTopButton.href = '#';
-        newScrollTopButton.innerHTML = '<i class="fa fa-arrow-up"></i>';
-        newScrollTopButton.style.cssText = 'position: fixed; bottom: 20px; right: 20px; background-color: #333; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center; align-items: center; text-decoration: none; box-shadow: 0 2px 5px rgba(0,0,0,0.3);';
-        
-        document.body.appendChild(newScrollTopButton);
-        
-        newScrollTopButton.addEventListener('click', function(e) {
-          e.preventDefault();
-          window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-          });
-        });
-      }
-    });
-  </script>
-  
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet" />
-  
-  <div class="flex items-center justify-between flex-wrap bg-gray-800 p-8 text-white">
-    <div class="items-center text-xl text-grey-900 mr-6">
-      <a href="/" class="text-gray-300 hover:text-white">ACCESSA GmbH</a> 
-    </div>
-    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto" id="mobileMenu">
-      <div class="text-lg lg:flex-grow">
-      </div>
-      <div class="flex flex-row items-center text-lg">
-        
-        <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-8">
-          
-           
-          
-        </a>
-        
-        <a href="/imprint" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-8">
-          
-           
-          Imprint
-           
-          
-        </a>
-        
-        <a href="/privacy-policy" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-8">
-          
-           
-          Privacy Policy
-           
-          
-        </a>
-        
-        <a href="https://www.linkedin.com/company/accessaconsulting" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-8">
-          
-          <i class='fab fa-linkedin text-2xl'></i>
-          
-        </a>
-        
-        <a href="mailto:info@accessa.ch" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-8">
-          
-          <i class='fas fa-envelope text-2xl'></i>
-          
-        </a>
-        
-      </div>
-    </div>
-  </div>
-  <div class="copy pl-8 py-5 bg-tlgray-700 text-white text-sm">
-    &copy; ACCESSA GmbH 2025 All Rights Reserved.
-  </div>
-</footer>
-</body>
-
-</html>
+{{ end }}
