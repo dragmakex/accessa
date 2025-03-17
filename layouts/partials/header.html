@@ -1,259 +1,265 @@
-<header>
-    <div id="overlay" class="fixed inset-0 bg-black bg-opacity-90 z-50 overflow-y-auto hidden">
-      <ul class="text-center list-none text-white text-3xl mt-8">
-        {{ range .Site.Menus.main }}
-        <li class="p-2">
-            {{ if .HasChildren }}
-            <div class="parent-menu cursor-pointer clean-text">
-                <span class="menu-text clean-text">{{ .Name }}</span>
-                <span class="dropdown-arrow ml-2 clean-text">▼</span>
-            </div>
-            <ul class="submenu p-2 mt-2 hidden">
-                {{ range .Children }}
-                <li class="p-1 text-xl">
-                    <a href="{{ .URL | safeURL }}" class="menu-link">{{ .Name }}</a>
-                </li>
-                {{ end }}
-            </ul>
-            {{ else }}
-            <a href="{{ .URL | safeURL }}" class="menu-link">
-                <span class="menu-text">{{ .Name }}</span>
-            </a>
-            {{ end }}
-        </li>
-        {{ end }}
-      </ul>    
-    </div>
+<header class="relative">
+    <!-- Main Navigation Bar -->
     <nav class="flex items-center justify-between flex-wrap bg-opacity-100 p-8">
         <div class="flex items-center flex-shrink-0 text-xl text-grey-900 mr-6">
             <a href="{{ .Site.BaseURL }}"><img alt="{{ .Site.Params.logo.alt }}"
                     class="{{ .Site.Params.logo.size }} mr-3 w-46 h-9 lg:h-12 lg:w-64" src="{{ .Site.Params.logo.main | relURL }}"></a>
         </div>
-        <div class="block">
-            <div id="hamburgerbtn" class="flex cursor-pointer items-center w-10 h-10 p-6 rounded mopen">
-                <span class="top"></span>
-                <span class="middle"></span>
-                <span class="bottom"></span>
+        <button id="hamburger-button" class="hamburger-btn" aria-label="Toggle Menu" aria-expanded="false">
+            <div class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </div>
+        </button>
     </nav>
+
+    <!-- Slide-in Menu Panel -->
+    <div id="slide-menu" class="slide-menu">
+        <div class="slide-menu-content">
+            <ul class="menu-items">
+                {{ range .Site.Menus.main }}
+                <li class="menu-item">
+                    {{ if .HasChildren }}
+                    <div class="parent-menu">
+                        <span class="menu-text">{{ .Name }}</span>
+                        {{ if and (ne .Name "About") (ne .Name "About Us") }}
+                        <span class="dropdown-arrow">▼</span>
+                        {{ else }}
+                        <span class="dropdown-arrow-placeholder"></span>
+                        {{ end }}
+                    </div>
+                    <ul class="submenu hidden">
+                        {{ range .Children }}
+                        <li class="submenu-item">
+                            <a href="{{ .URL | safeURL }}" class="menu-link">{{ .Name }}</a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                    {{ else }}
+                    <a href="{{ .URL | safeURL }}" class="menu-link">
+                        <span class="menu-text">{{ .Name }}</span>
+                    </a>
+                    {{ end }}
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
 </header>
 
 <style>
-/* Mobile menu styles */
-.clean-text::before,
-.clean-text::after {
-    content: none !important;
-    display: none !important;
-}
-
-.clean-text {
+/* Primary Hamburger Button Styles */
+.hamburger-btn {
     position: relative;
+    z-index: 1001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
 }
 
-.clean-text > *::before,
-.clean-text > *::after {
-    content: none !important;
-    display: none !important;
-}
-.menu-text::after,
-.menu-text::before,
-.menu-link::after,
-.menu-link::before {
-    content: none !important;
-    display: none !important;
-}
-
-.menu-text,
-.menu-link {
+.hamburger-icon {
     position: relative;
-    display: inline-block;
+    width: 20px;
+    height: 16px;
 }
 
-/* Prevent pseudo-elements from appearing */
-.parent-menu::after,
-.parent-menu::before {
-    display: none !important;
-    content: none !important;
-}
-#overlay .submenu {
-    margin-left: 1rem;
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
+.hamburger-icon span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    border-radius: 2px;
+    transition: all 0.3s ease;
 }
 
-.dropdown-arrow {
+.hamburger-icon span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger-icon span:nth-child(2) {
+    top: 7px;
+}
+
+.hamburger-icon span:nth-child(3) {
+    top: 14px;
+}
+
+/* X animation when menu is open */
+.hamburger-btn.is-open .hamburger-icon span {
+    background-color: #fff;
+}
+
+.hamburger-btn.is-open .hamburger-icon span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 7px;
+}
+
+.hamburger-btn.is-open .hamburger-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-btn.is-open .hamburger-icon span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 7px;
+}
+
+/* Slide-in Menu Panel Styles */
+.slide-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #248ac7;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+    overflow-y: auto;
+}
+
+.slide-menu.open {
+    transform: translateX(-300px);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.slide-menu-content {
+    padding: 80px 30px 30px;
+}
+
+/* Menu Items Styling */
+.menu-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+}
+
+.menu-link,
+.parent-menu {
+    color: white;
+    font-size: 1.25rem;
+    text-decoration: none;
+    display: block;
+    padding: 8px 0;
+    transition: opacity 0.2s;
+}
+
+.menu-link:hover,
+.parent-menu:hover {
+    opacity: 0.8;
+}
+
+.parent-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown-arrow, .dropdown-arrow-placeholder {
     font-size: 0.7em;
     transition: transform 0.3s ease;
+    margin-left: 8px;
+}
+
+.dropdown-arrow-placeholder {
+    width: 12px; /* Match approximately the width of the arrow character */
+    display: inline-block;
+    visibility: hidden;
 }
 
 .dropdown-arrow.open {
     transform: rotate(180deg);
 }
 
-.parent-menu {
-    display: inline-flex;
-    align-items: center;
+.submenu {
+    margin-top: 5px;
+    margin-left: 15px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 15px;
 }
 
-/* Force hide any unwanted characters */
-body nav::after,
-body .menu-item::after,
-body nav::before,
-body .menu-item::before,
-body nav *::before,
-body nav *::after {
-    content: none !important;
-    display: none !important;
+.submenu-item {
+    margin-top: 10px;
 }
 
-/* Specifically target any x character in the navigation */
-body nav *:not(#closeMenu):not(#hamburgerbtn)::before,
-body nav *:not(#closeMenu):not(#hamburgerbtn)::after {
-    content: none !important;
-    display: none !important;
+.submenu-item .menu-link {
+    font-size: 1rem;
 }
 
-/* Target the specific area where the unwanted x appears */
-nav ul:not(#overlay ul) {
-    font-size: 0 !important;
-}
-
-/* Hide any text nodes that are direct children of nav */
-nav > *:not(div):not(.block):not(.flex):not(#hamburgerbtn):empty,
-nav > *:only-child {
-    display: none !important;
-}
-
-/* Hide the 'x' character specifically */
-nav *:empty::before, 
-nav *:empty::after {
-    display: none !important;
-    content: none !important;
-}
-
-/* Hide all standalone text under nav */
-nav {
-    position: relative;
-}
-
-/* Overlay the problem area with a clean element */
-nav::after {
-    content: "" !important;
-    display: block !important;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: -1;
+/* Utility Classes */
+.hidden {
+    display: none;
 }
 </style>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Function to clean unwanted characters
-    function cleanUnwantedCharacters() {
-        const parentMenus = document.querySelectorAll('.parent-menu');
-        parentMenus.forEach(menu => {
-            // Remove any direct text nodes that might contain 'x'
-            Array.from(menu.childNodes).forEach(node => {
-                if (node.nodeType === 3) { // Text node
-                    node.textContent = node.textContent.replace(/[×x✕]/g, '');
-                }
-            });
-        });
-    }
-    
-    // Run the cleaning function on load and after a short delay
-    cleanUnwantedCharacters();
-    setTimeout(cleanUnwantedCharacters, 100);
-    const hamburgerbtn = document.getElementById('hamburgerbtn');
-    // Close button removed
-    const overlay = document.getElementById('overlay');
+    const hamburgerBtn = document.getElementById('hamburger-button');
+    const slideMenu = document.getElementById('slide-menu');
     const parentMenus = document.querySelectorAll('.parent-menu');
     
-    // Advanced method to remove any unwanted 'x' characters
-    const removeUnwantedXCharacters = function() {
-        // Look for any text nodes in the entire nav that might contain an 'x'
-        const nav = document.querySelector('nav');
-        if (nav) {
-            const walker = document.createTreeWalker(
-                nav,
-                NodeFilter.SHOW_TEXT,
-                null,
-                false
-            );
-            
-            // Collect nodes to check
-            const textNodes = [];
-            let currentNode;
-            while (currentNode = walker.nextNode()) {
-                textNodes.push(currentNode);
-            }
-            
-            // Process and remove unwanted text nodes
-            textNodes.forEach(node => {
-                const text = node.nodeValue.trim();
-                if (text === 'x' || text === '×' || text === '✕' || text.length === 1) {
-                    // Replace with empty text
-                    node.nodeValue = '';
-                }
-            });
-        }
-    };
-    
-    // Run multiple times to ensure it catches the character
-    removeUnwantedXCharacters();
-    setTimeout(removeUnwantedXCharacters, 100);
-    setTimeout(removeUnwantedXCharacters, 500);
-    
-    hamburgerbtn.addEventListener('click', function() {
-        overlay.classList.remove('hidden');
-        // Run again after opening menu
-        setTimeout(removeUnwantedXCharacters, 100);
-    });
-    
-    // Close menu when clicking anywhere on the overlay
-    overlay.addEventListener('click', function(e) {
-        if (e.target === overlay) {
-            overlay.classList.add('hidden');
+    // Toggle menu when hamburger button is clicked
+    hamburgerBtn.addEventListener('click', function() {
+        hamburgerBtn.classList.toggle('is-open');
+        slideMenu.classList.toggle('open');
+        
+        // Update ARIA expanded state
+        const isExpanded = hamburgerBtn.classList.contains('is-open');
+        hamburgerBtn.setAttribute('aria-expanded', isExpanded);
+        
+        // Prevent scrolling when menu is open
+        if (isExpanded) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
         }
     });
     
-    // Also close with Escape key
+    // Close menu when Escape key is pressed
     document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && !overlay.classList.contains('hidden')) {
-            overlay.classList.add('hidden');
+        if (e.key === 'Escape' && slideMenu.classList.contains('open')) {
+            hamburgerBtn.classList.remove('is-open');
+            slideMenu.classList.remove('open');
+            hamburgerBtn.setAttribute('aria-expanded', false);
+            document.body.style.overflow = '';
         }
     });
     
-    // Handle parent menu clicks
+    // Handle parent menu clicks for dropdowns
     parentMenus.forEach(function(parentMenu) {
         parentMenu.addEventListener('click', function() {
-            // Toggle the arrow direction
+            // Toggle the arrow direction (if it exists)
             const arrow = this.querySelector('.dropdown-arrow');
-            arrow.classList.toggle('open');
+            if (arrow) {
+                arrow.classList.toggle('open');
+            }
             
             // Toggle the submenu visibility
             const submenu = this.nextElementSibling;
             submenu.classList.toggle('hidden');
-            
-            // Run again after toggling submenu
-            setTimeout(removeUnwantedXCharacters, 100);
         });
     });
     
-    // Create a MutationObserver to watch for changes in the DOM
-    const observer = new MutationObserver(function(mutations) {
-        removeUnwantedXCharacters();
-    });
-    
-    // Start observing the document with the configured parameters
-    observer.observe(document.body, { 
-        childList: true, 
-        subtree: true,
-        characterData: true
+    // Close menu when clicking on a link (for mobile navigation)
+    const menuLinks = slideMenu.querySelectorAll('.menu-link');
+    menuLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            hamburgerBtn.classList.remove('is-open');
+            slideMenu.classList.remove('open');
+            hamburgerBtn.setAttribute('aria-expanded', false);
+            document.body.style.overflow = '';
+        });
     });
 });
 </script>
