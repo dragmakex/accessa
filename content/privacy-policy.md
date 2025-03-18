@@ -21,7 +21,7 @@ Talstrasse 24
 8852 Altendorf SZ  
 Switzerland  
 
-You can contact our data protection officer pursuant to art. 37 GDPR using the above contact details or under privacy@accessa.ch, who additionally is our representative in the EEA according to article 27 GDPR (if necessary).
+You can contact our data protection officer pursuant to art. 37 GDPR using the above contact details or under privacy ät accessa.ch, who additionally is our representative in the EEA according to article 27 GDPR (if necessary).
 
 ### 2. Collection and Processing of Personal Data
 

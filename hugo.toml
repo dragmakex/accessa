@@ -117,5 +117,6 @@ enableRobotsTXT = true
   [[menu.footer]]
     name = "Email"
     url = "mailto:info@accessa.ch"
+    title = "info ät accessa.ch"
     pre = "<i class='fas fa-envelope text-2xl'></i>"
       weight = 5
