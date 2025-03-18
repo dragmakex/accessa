@@ -1,47 +1,44 @@
-/* 
- This CSS file is used to override the existing styles of the theme.
- You can change the article headings, fonts, colors, etc.
-*/
+/* Custom CSS for ACCESSA website */
 
-/* Reduce font size for content page titles */
-.title {
-    font-size: 2rem !important; /* Smaller title size */
-    line-height: 1.2;
+/* Contact Page Styles */
+.single-content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* Adjust content font sizes */
-.content.prose {
-    font-size: 0.95rem;
+.single-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 
-.content.prose h1 {
-    font-size: 1.8rem;
+.single-content a {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
-.content.prose h2 {
-    font-size: 1.5rem;
+.single-content a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
 }
 
-.content.prose h3 {
-    font-size: 1.25rem;
+.single-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Ensure content looks good on all devices */
+/* Form styling enhancements */
+.input {
+  margin-bottom: 1.2rem;
+}
+
 @media (max-width: 768px) {
-    .title {
-        font-size: 1.75rem !important;
-    }
-    
-    .content.prose h1 {
-        font-size: 1.5rem;
-    }
-    
-    .content.prose h2 {
-        font-size: 1.25rem;
-    }
-    
-    .content.prose h3 {
-        font-size: 1.1rem;
-    }
+  .single-content {
+    padding: 0 1rem;
+  }
 }
-
