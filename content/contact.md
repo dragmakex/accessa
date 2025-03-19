@@ -10,7 +10,7 @@ Talstrasse 24
 8852 Altendorf, SZ  
 Switzerland
 
-**Email:** [info ät accessa.ch](mailto:info@accessa.ch)
+**Email:** [info@accessa.ch](mailto:info@accessa.ch)
 
 ![Map showing ACCESSA location](/img/map.gif)
 
