@@ -22,7 +22,7 @@
                 <li class="menu-item">
                     {{ if .HasChildren }}
                     <div class="parent-menu">
-                        <span class="menu-text">{{ .Name }}</span>
+                        <span class="menu-text font-bold">{{ .Name }}</span>
                         {{ if and (ne .Name "About") (ne .Name "About Us") }}
                         <span class="dropdown-arrow">▼</span>
                         {{ else }}
@@ -32,13 +32,15 @@
                     <ul class="submenu hidden">
                         {{ range .Children }}
                         <li class="submenu-item">
-                            <a href="{{ .URL | safeURL }}" class="menu-link">{{ .Name }}</a>
+                            <a href="{{ .URL | safeURL }}" class="menu-link">
+                                <span class="menu-text">{{ .Name }}</span>
+                            </a>
                         </li>
                         {{ end }}
                     </ul>
                     {{ else }}
                     <a href="{{ .URL | safeURL }}" class="menu-link">
-                        <span class="menu-text">{{ .Name }}</span>
+                        <span class="menu-text font-bold">{{ .Name }}</span>
                     </a>
                     {{ end }}
                 </li>
@@ -125,8 +127,8 @@
 .slide-menu {
     position: fixed;
     top: 0;
-    right: -350px;
-    width: 350px;
+    right: -33.333vw;
+    width: 33.333vw;
     height: 100%;
     background-color: rgba(33, 66, 166, 0.85);
     z-index: 1000;
@@ -135,7 +137,7 @@
 }
 
 .slide-menu.open {
-    transform: translateX(-350px);
+    transform: translateX(-33.333vw);
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -146,12 +148,12 @@
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
     .slide-menu {
-        right: -300px;
-        width: 300px;
+        right: -80vw;
+        width: 80vw;
     }
     
     .slide-menu.open {
-        transform: translateX(-300px);
+        transform: translateX(-80vw);
     }
 }
 

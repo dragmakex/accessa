@@ -63,7 +63,7 @@
                 <li class="menu-item">
                     
                     <a href="/#expertise" class="menu-link">
-                        <span class="menu-text">Expertise</span>
+                        <span class="menu-text font-bold">Expertise</span>
                     </a>
                     
                 </li>
@@ -71,7 +71,7 @@
                 <li class="menu-item">
                     
                     <a href="/core" class="menu-link">
-                        <span class="menu-text">Core Areas</span>
+                        <span class="menu-text font-bold">Core Areas</span>
                     </a>
                     
                 </li>
@@ -79,7 +79,7 @@
                 <li class="menu-item">
                     
                     <div class="parent-menu">
-                        <span class="menu-text">About</span>
+                        <span class="menu-text font-bold">About</span>
                         
                         <span class="dropdown-arrow-placeholder"></span>
                         
@@ -87,11 +87,15 @@
                     <ul class="submenu hidden">
                         
                         <li class="submenu-item">
-                            <a href="/about-us" class="menu-link">About Us</a>
+                            <a href="/about-us" class="menu-link">
+                                <span class="menu-text">About Us</span>
+                            </a>
                         </li>
                         
                         <li class="submenu-item">
-                            <a href="/team" class="menu-link">Our Team</a>
+                            <a href="/team" class="menu-link">
+                                <span class="menu-text">Our Team</span>
+                            </a>
                         </li>
                         
                     </ul>
@@ -101,7 +105,7 @@
                 <li class="menu-item">
                     
                     <a href="/contact" class="menu-link">
-                        <span class="menu-text">Contact</span>
+                        <span class="menu-text font-bold">Contact</span>
                     </a>
                     
                 </li>
@@ -188,8 +192,8 @@
 .slide-menu {
     position: fixed;
     top: 0;
-    right: -350px;
-    width: 350px;
+    right: -33.333vw;
+    width: 33.333vw;
     height: 100%;
     background-color: rgba(33, 66, 166, 0.85);
     z-index: 1000;
@@ -198,7 +202,7 @@
 }
 
 .slide-menu.open {
-    transform: translateX(-350px);
+    transform: translateX(-33.333vw);
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -209,12 +213,12 @@
  
 @media (max-width: 768px) {
     .slide-menu {
-        right: -300px;
-        width: 300px;
+        right: -80vw;
+        width: 80vw;
     }
     
     .slide-menu.open {
-        transform: translateX(-300px);
+        transform: translateX(-80vw);
     }
 }
 
