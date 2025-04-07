@@ -1,0 +1,125 @@
+{{ define "meta_tags" }}
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="{{ .Title }}">
+
+{{ if .Params.image }}
+{{ with .Params.image }}
+<meta property="og:image" content="{{ . | absURL }}">
+{{ end }}
+{{ else }}
+<meta property="og:image" content="{{ .Site.Params.homepage_meta_tags.meta_og_image | absURL }}">
+{{ end }}
+
+{{- if .Description }}
+<meta name="description" content="{{ .Description }}" />
+<meta property="og:description" content="{{ .Description }}" />
+<meta property="twitter:description" content="{{ .Description }}" />
+{{- else if .Summary }}
+<meta name="description" content="{{ .Summary }}" />
+<meta property="og:description" content="{{ .Summary }}" />
+<meta property="twitter:description" content="{{ .Summary }}" />
+{{- else if .Site.Params.description }}
+<meta name="description" content="{{ .Site.Params.description }}" />
+<meta property="og:description" content="{{ .Site.Params.description }}" />
+<meta property="twitter:description" content="{{ .Site.Params.description }}" />
+{{- end }}
+{{ end }}
+
+{{ define "main" }}
+<div class="references-container mx-auto my-10 max-w-6xl">
+  <div class="mx-3 px-2">
+    <h1 class="title text-3xl mb-8 text-center" style="font-size: 2rem !important;">{{.Title}}</h1>
+    
+    <div class="reference-gallery">
+      <div class="reference-intro">
+        <p>References from businesses and organizations that have partnered with us to achieve their goals.</p>
+      </div>
+      
+      <div class="reference-grid">
+        <div class="reference-item">TE Connectivity</div>
+        <div class="reference-item">Autokabel Voltaire</div>
+        <div class="reference-item">C&E Fein</div>
+        <div class="reference-item">iwis mechatronics</div>
+        <div class="reference-item">Carl Zeiss Vision GmbH</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .references-container {
+    margin-top: 3rem;
+  }
+  
+  .reference-gallery {
+    background-color: rgba(33, 66, 166, 0.85); /* Match menu background color */
+    border-radius: 12px;
+    padding: 4rem 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    margin: 2rem auto;
+    max-width: 1000px;
+  }
+  
+  .reference-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .reference-intro p {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .reference-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .reference-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 200px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .reference-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .reference-intro p {
+      font-size: 1.25rem;
+    }
+    
+    .reference-grid {
+      gap: 1.5rem;
+    }
+    
+    .reference-item {
+      min-width: 150px;
+      font-size: 1.1rem;
+      padding: 1.25rem 1.5rem;
+    }
+  }
+</style>
+{{ end }}

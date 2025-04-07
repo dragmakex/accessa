@@ -3,7 +3,7 @@
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 <meta charset="utf-8">
-<title>ACCESSA | Categories</title>
+<title>ACCESSA | References</title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <link rel="apple-touch-icon" sizes="180x180" href='/apple-touch-icon.png'>
 <link rel="icon" type="image/png" sizes="32x32" href='/favicon-32x32.png'>
@@ -20,18 +20,19 @@
 <link href='/css/style.min.css' rel="stylesheet" type="text/css">
 <link rel="stylesheet" href='/css/custom.css'>
 
-
 <meta property="og:site_name" content="ACCESSA" />
-<meta property="og:title" content="Categories | ACCESSA" />
+<meta property="og:title" content="References | ACCESSA" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/categories/" />
+<meta property="og:url" content="http://localhost:1313/references/" />
 <meta name="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="Categories">
+<meta property="twitter:title" content="References">
 
 
 <meta property="og:image" content="http://localhost:1313/images/tn.png">
 
-
+<meta name="description" content="Client references and partnerships." />
+<meta property="og:description" content="Client references and partnerships." />
+<meta property="twitter:description" content="Client references and partnerships." />
 
 </head>
 
@@ -357,16 +358,98 @@ document.addEventListener('DOMContentLoaded', function() {
 </script><div class="scroll-top rounded-full">
       <span class="icon-keyboard_arrow_up text-2xl"></span>
     </div>
-<div class="mx-auto my-10 max-w-6xl">
-  <div class="mx-3 col-span-3 lg:col-span-2 px-2">
-    <h1 class="title text-5xl mb-4">Categories</h1>
-    <div class="content py-1"></div>
+<div class="references-container mx-auto my-10 max-w-6xl">
+  <div class="mx-3 px-2">
+    <h1 class="title text-3xl mb-8 text-center" style="font-size: 2rem !important;">References</h1>
     
-    
+    <div class="reference-gallery">
+      <div class="reference-intro">
+        <p>References from businesses and organizations that have partnered with us to achieve their goals.</p>
+      </div>
+      
+      <div class="reference-grid">
+        <div class="reference-item">TE Connectivity</div>
+        <div class="reference-item">Autokabel Voltaire</div>
+        <div class="reference-item">C&E Fein</div>
+        <div class="reference-item">iwis mechatronics</div>
+        <div class="reference-item">Carl Zeiss Vision GmbH</div>
+      </div>
+    </div>
   </div>
-  
-
 </div>
+
+<style>
+  .references-container {
+    margin-top: 3rem;
+  }
+  
+  .reference-gallery {
+    background-color: rgba(33, 66, 166, 0.85);  
+    border-radius: 12px;
+    padding: 4rem 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    margin: 2rem auto;
+    max-width: 1000px;
+  }
+  
+  .reference-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .reference-intro p {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .reference-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .reference-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 200px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .reference-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .reference-intro p {
+      font-size: 1.25rem;
+    }
+    
+    .reference-grid {
+      gap: 1.5rem;
+    }
+    
+    .reference-item {
+      min-width: 150px;
+      font-size: 1.1rem;
+      padding: 1.25rem 1.5rem;
+    }
+  }
+</style>
 
   </main><footer class="bg-tlgray-100">
   
