@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.145.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.145.0">
+
+
 <meta charset="utf-8">
 <title>ACCESSA</title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -15,7 +17,8 @@
 
 
 
-<link rel="stylesheet" href="/css/style.css">
+
+<link rel="stylesheet" href="/css/style.min.b78a34f0cdef40b897c944b18a0f6f9818dd51dbd3ee136ed0e035cd2fcb9d88.css" />
 
 
 <link rel="stylesheet" href='/css/swiper-bundle.min.css'>
@@ -37,7 +40,7 @@
     
     <nav class="flex items-center justify-between flex-wrap bg-opacity-100 p-8">
         <div class="flex items-center flex-shrink-0 text-xl text-grey-900 mr-6">
-            <a href="http://localhost:1313/"><img alt="ACCESSA Logo"
+            <a href="https://accessa.ch/"><img alt="ACCESSA Logo"
                     class="h-16 mr-3 w-46 h-9 lg:h-12 lg:w-64" src="/img/logo/logo.jpg"></a>
         </div>
         <button id="hamburger-button" class="hamburger-btn" aria-label="Toggle Menu" aria-expanded="false">
@@ -170,7 +173,7 @@
 
  
 .hamburger-btn.is-open .hamburger-icon span {
-    background-color: #fff;
+    background-color: #333;
     opacity: 0.9;
 }
 
@@ -192,17 +195,17 @@
 .slide-menu {
     position: fixed;
     top: 0;
-    right: -33.333vw;
-    width: 33.333vw;
+    right: -25vw;
+    width: 25vw;
     height: 100%;
-    background-color: rgba(33, 66, 166, 0.85);
+    background-color: rgb(207, 211, 222);
     z-index: 1000;
     transition: transform 0.3s ease-in-out;
     overflow-y: auto;
 }
 
 .slide-menu.open {
-    transform: translateX(-33.333vw);
+    transform: translateX(-25vw);
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -213,12 +216,12 @@
  
 @media (max-width: 768px) {
     .slide-menu {
-        right: -80vw;
-        width: 80vw;
+        right: -75vw;
+        width: 75vw;
     }
     
     .slide-menu.open {
-        transform: translateX(-80vw);
+        transform: translateX(-75vw);
     }
 }
 
@@ -235,7 +238,7 @@
 
 .menu-link,
 .parent-menu {
-    color: white;
+    color: #333;
     font-size: 1.25rem;
     text-decoration: none;
     display: block;
@@ -274,7 +277,7 @@
 .submenu {
     margin-top: 5px;
     margin-left: 15px;
-    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
     padding-left: 15px;
 }
 

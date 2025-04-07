@@ -105,7 +105,7 @@
 
 /* X animation when menu is open */
 .hamburger-btn.is-open .hamburger-icon span {
-    background-color: #fff;
+    background-color: #333;
     opacity: 0.9;
 }
 
@@ -127,17 +127,17 @@
 .slide-menu {
     position: fixed;
     top: 0;
-    right: -33.333vw;
-    width: 33.333vw;
+    right: -25vw;
+    width: 25vw;
     height: 100%;
-    background-color: rgba(33, 66, 166, 0.85);
+    background-color: rgb(207, 211, 222);
     z-index: 1000;
     transition: transform 0.3s ease-in-out;
     overflow-y: auto;
 }
 
 .slide-menu.open {
-    transform: translateX(-33.333vw);
+    transform: translateX(-25vw);
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -148,12 +148,12 @@
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
     .slide-menu {
-        right: -80vw;
-        width: 80vw;
+        right: -75vw;
+        width: 75vw;
     }
     
     .slide-menu.open {
-        transform: translateX(-80vw);
+        transform: translateX(-75vw);
     }
 }
 
@@ -170,7 +170,7 @@
 
 .menu-link,
 .parent-menu {
-    color: white;
+    color: #333;
     font-size: 1.25rem;
     text-decoration: none;
     display: block;
@@ -209,7 +209,7 @@
 .submenu {
     margin-top: 5px;
     margin-left: 15px;
-    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
     padding-left: 15px;
 }
 
