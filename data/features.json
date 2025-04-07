@@ -5,6 +5,11 @@
       "icon": "fa-solid fa-computer"
   },
   {
+      "title": "Interim Management",
+      "description": "Providing expert leadership for your business, ensuring seamless transition in key functions.",
+      "icon": "fa-solid fa-user-tie"
+  },
+  {
       "title": "Project Management",
       "description": "Comprehensive project management solutions from initiation to closure, ensuring projects are delivered on time and within budget.",
       "icon": "fa-solid fa-diagram-project"
@@ -13,10 +18,5 @@
       "title": "Coaching",
       "description": "Personalized coaching services to develop leadership skills, improve team dynamics, and achieve professional goals.",
       "icon": "fa-solid fa-hand-fist"
-  }, 
-  {
-      "title": "Interim Management",
-      "description": "Providing expert leadership for your business, ensuring seamless transition in key functions.",
-      "icon": "fa-solid fa-user-tie"
   }
 ]

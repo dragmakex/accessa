@@ -58,7 +58,7 @@ enableRobotsTXT = true
 
   [[menu.main]]
     identifier = "expertise"
-    name = "Expertise"
+    name = "Services"
     url = "/#expertise"
     weight = 1
 
