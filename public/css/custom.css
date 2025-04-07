@@ -1,5 +1,20 @@
 /* Custom CSS for ACCESSA website */
 
+/* Navigation Menu Styles */
+.slide-menu-content {
+  padding: 120px 30px 30px !important; /* Added more padding at the top */
+}
+
+.menu-link,
+.parent-menu {
+  font-size: 2.5rem !important; /* Double the font size (original was 1.25rem) */
+  padding-left: 15px !important; /* Add a little space on the left */
+}
+
+.submenu-item .menu-link {
+  font-size: 2rem !important; /* Double the font size for submenu items (original was 1rem) */
+}
+
 /* Contact Page Styles */
 .single-content {
   max-width: 800px;
