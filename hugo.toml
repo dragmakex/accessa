@@ -80,11 +80,11 @@ enableRobotsTXT = true
     parent = "about"
     weight = 2
     
-  [[menu.main]]
-    name = "References"
-    url = "/references"
-    parent = "about"
-    weight = 3
+  # [[menu.main]]
+  #   name = "References"
+  #   url = "/references"
+  #   parent = "about"
+  #   weight = 3
   [[menu.main]]
     identifier = "core"
     name = "Core Areas"

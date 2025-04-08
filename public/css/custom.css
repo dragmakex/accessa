@@ -1,6 +1,10 @@
 /* Custom CSS for ACCESSA website */
 
 /* Navigation Menu Styles */
+#mobileMenu .text-lg {
+    font-weight: bold;
+    font-size: 1.05rem; /* Slightly smaller than the default text-lg (1.125rem) */
+}
 .slide-menu-content {
   padding: 120px 30px 30px !important; /* Added more padding at the top */
 }
