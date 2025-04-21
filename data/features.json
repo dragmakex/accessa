@@ -1,7 +1,7 @@
 [
   {
       "title": "Business Consulting",
-      "description": "Expert guidance to streamline business processes, enhance operational efficiency, and drive sustainable growth.",
+      "description": "Expert guidance to streamline business processes, enhance operational efficiency and drive sustainable growth.",
       "icon": "fa-solid fa-computer"
   },
   {
@@ -16,7 +16,8 @@
   },
   {
       "title": "Coaching",
-      "description": "Personalized coaching services to develop leadership skills, improve team dynamics, and achieve professional goals.",
+      "description": "Personalized coaching services to develop leadership skills, improve team dynamics and achieve professional goals.",
       "icon": "fa-solid fa-hand-fist"
   }
+ 
 ]
