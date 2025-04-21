@@ -11,12 +11,12 @@
 
 .menu-link,
 .parent-menu {
-  font-size: 2.5rem !important; /* Double the font size (original was 1.25rem) */
+  font-size: 1.8rem !important; /* Reduced from 2.5rem */
   padding-left: 15px !important; /* Add a little space on the left */
 }
 
 .submenu-item .menu-link {
-  font-size: 2rem !important; /* Double the font size for submenu items (original was 1rem) */
+  font-size: 1.5rem !important; /* Reduced from 2rem */
 }
 
 /* Contact Page Styles */
