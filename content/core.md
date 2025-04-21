@@ -3,6 +3,7 @@ title = "Core Areas"
 description = "ACCESSA, Accelerator of Success."
 date = "2024-04-24"
 author = "ACCESSA GmbH"
+layout = "core"
 +++
 ***
 

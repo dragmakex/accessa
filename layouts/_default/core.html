@@ -1,0 +1,264 @@
+{{ define "meta_tags" }}
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="{{ .Title }}">
+
+{{ if .Params.image }}
+{{ with .Params.image }}
+<meta property="og:image" content="{{ . | absURL }}">
+{{ end }}
+{{ else }}
+<meta property="og:image" content="{{ .Site.Params.homepage_meta_tags.meta_og_image | absURL }}">
+{{ end }}
+
+{{- if .Description }}
+<meta name="description" content="{{ .Description }}" />
+<meta property="og:description" content="{{ .Description }}" />
+<meta property="twitter:description" content="{{ .Description }}" />
+{{- else if .Summary }}
+<meta name="description" content="{{ .Summary }}" />
+<meta property="og:description" content="{{ .Summary }}" />
+<meta property="twitter:description" content="{{ .Summary }}" />
+{{- else if .Site.Params.description }}
+<meta name="description" content="{{ .Site.Params.description }}" />
+<meta property="og:description" content="{{ .Site.Params.description }}" />
+<meta property="twitter:description" content="{{ .Site.Params.description }}" />
+{{- end }}
+{{ end }}
+
+{{ define "main" }}
+<div class="mx-auto my-10 max-w-6xl">
+  <div class="mx-3 col-span-3 lg:col-span-2 px-2">
+    <h1 class="title text-3xl mb-4" style="font-size: 1.875rem !important;">{{.Title}}</h1>
+    <div class="content prose md:prose-base lg:prose-lg max-w-none py-1" style="font-size: 1.125rem;">
+      <hr>
+    </div>
+    
+    <!-- Core areas boxes -->
+    <div class="core-areas-container">
+      <!-- Financial Management Box -->
+      <div class="core-box">
+        <div class="core-image">
+          <img src="/img/financial_management.jpg" alt="Financial Management">
+        </div>
+        <h2 class="core-title">Financial Management</h2>
+        <div class="core-description">
+          <p>Strategic planning and risk management to optimize financial performance and enhance profitability. ACCESSA GmbH specializes in comprehensive financial management services designed to enhance operational efficiency.</p>
+          
+          <ul class="core-list">
+            <li><strong>Business Partnership</strong><br>
+              Acting as strategic advisors, we ensure that financial insights guide to business decisions at every level.</li>
+            
+            <li><strong>Financial and Process Control</strong><br>
+              Implementing rigorous financial control to enhance the integrity of your operational processes.</li>
+            
+            <li><strong>Financial Organizations</strong><br>
+              Structuring your financial operations to meet your business objectives efficiently.</li>
+            
+            <li><strong>Management Reporting and Decision Tools</strong><br>
+              Implementing customized tools and reports to enable high-level decision-making for achieving your business goals.</li>
+            
+            <li><strong>Business Transformation and Integration</strong><br>
+              Managing the financial aspects of emerging business rationalizations.</li>
+            
+            <li><strong>Project Management</strong><br>
+              Offering expert project management services to oversee and deliver projects on time, within scope and budget.</li>
+            
+            <li><strong>Intercultural Competence</strong><br>
+              Bridging cultural gaps within global financial management practices to enhance team collaboration and business operations.</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Supply Chain Management Box -->
+      <div class="core-box">
+        <div class="core-image">
+          <img src="/img/supply_chain_management.jpg" alt="Supply Chain Management">
+        </div>
+        <h2 class="core-title">Supply Chain Management</h2>
+        <div class="core-description">
+          <p>Our supply chain management solutions are tailored to optimize the efficiency and the adaptability of your supply chain network.</p>
+          
+          <ul class="core-list">
+            <li><strong>Order Management</strong><br>
+              Implementing and streamlining a customer centric process to enable an error free, on time and in full delivery.</li>
+            
+            <li><strong>Materials Management</strong><br>
+              Ensuring that the right materials are in the right place at the right time. Opzimizing inventory and improving delivery service.</li>
+            
+            <li><strong>Supply Network Planning</strong><br>
+              Advanced planning solutions to enhance the visibility and responsiveness of your supply network.</li>
+            
+            <li><strong>Production Scheduling</strong><br>
+              Optimizing production schedules to maximize efficiency and meet demand.</li>
+            
+            <li><strong>Complexity Management and Process Design</strong><br>
+              Simplifying processes and managing complexity to increase efficiency and reduce costs.</li>
+            
+            <li><strong>Customer Centricity</strong><br>
+              Aligning supply chain processes to meet customer needs and to increase service levels.</li>
+            
+            <li><strong>Change Management</strong><br>
+              Helping organizations and teams to adapt smoothly and effectively to new conditions, processes or startegies.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Core areas layout and styling */
+  .core-areas-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto 4rem;
+  }
+  
+  .core-box {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .core-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  }
+  
+  .core-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .core-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+  }
+  
+  .core-box:hover .core-image img {
+    transform: scale(1.05);
+  }
+  
+  .core-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #248ac7;
+    padding: 1.5rem 1.5rem 0.5rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  .core-title:after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: #248ac7;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
+  }
+  
+  .core-description {
+    padding: 1.5rem;
+    flex: 1;
+  }
+  
+  .core-description p {
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .core-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .core-list li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.5;
+  }
+  
+  .core-list li:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #248ac7;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .core-list li strong {
+    color: #248ac7;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .core-areas-container {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    
+    .core-image {
+      height: 240px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .core-image {
+      height: 200px;
+    }
+    
+    .core-title {
+      font-size: 1.4rem;
+      padding: 1.2rem 1.2rem 0.5rem;
+    }
+    
+    .core-description {
+      padding: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .core-image {
+      height: 180px;
+    }
+    
+    .core-title {
+      font-size: 1.3rem;
+      padding: 1rem 1rem 0.5rem;
+    }
+    
+    .core-description {
+      padding: 1rem;
+    }
+    
+    .core-list li {
+      padding-left: 1.2rem;
+    }
+  }
+</style>
+{{ end }}

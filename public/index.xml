@@ -2,60 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ACCESSA</title>
-    <link>http://localhost:1313/</link>
+    <link>https://accessa.ch/</link>
     <description>Recent content on ACCESSA</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://accessa.ch/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Us</title>
-      <link>http://localhost:1313/about-us/</link>
+      <link>https://accessa.ch/about-us/</link>
       <pubDate>Tue, 23 Apr 2024 12:33:45 +1000</pubDate>
-      <guid>http://localhost:1313/about-us/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;p&gt;ACCESSA GmbH has been founded in canton Schwyz, in the metropolitan area surrounding Zürich and is successfully serving as management consulting company customers from the DACH region.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/schweiz.jpg&#34; alt=&#34;Canton Schwyz&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;</description>
+      <guid>https://accessa.ch/about-us/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;ACCESSA GmbH has been founded in canton Schwyz, in the metropolitan area surrounding Zürich and is successfully serving as management consulting company customers from the DACH region.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://accessa.ch/img/schweiz.jpg&#34; alt=&#34;Canton Schwyz&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;</description>
     </item>
     <item>
       <title>Our Team</title>
-      <link>http://localhost:1313/team/</link>
+      <link>https://accessa.ch/team/</link>
       <pubDate>Tue, 23 Apr 2024 12:33:45 +1000</pubDate>
-      <guid>http://localhost:1313/team/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;stoycho-gigov&#34;&gt;Stoycho Gigov&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/stgigov.jpg&#34; alt=&#34;Stoycho Gigov&#34;&gt;&#xA;&lt;strong&gt;Role:&lt;/strong&gt; Founder, CEO, Partner Finance and Controlling&lt;br&gt;&#xA;&lt;strong&gt;LinkedIn Profile:&lt;/strong&gt; &lt;a href=&#34;https://www.linkedin.com/in/stoycho-gigov-2a0a1610/&#34;&gt;Visit LinkedIn&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Stoycho is an experienced management consultant and finance executive with a strong focus on global finance and controlling. His exceptional leadership skills, highlighted by his talent for building high performing finance teams and his impressive implementation excellence, have led to a track record of remarkable achievements.&lt;/p&gt;&#xA;&lt;p&gt;With extensive experience spanning 25 years, Stoycho has designed and implemented global profitability and cost transparency models, worldwide integrated profitability analysis, plant performance solutions, transfer pricing models and comprehensive ERP process integrations. He&amp;rsquo;s been instrumental in building multi-country controlling functions in Europe, Asia and North America.&lt;/p&gt;</description>
+      <guid>https://accessa.ch/team/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;stoycho-gigov&#34;&gt;Stoycho Gigov&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://accessa.ch/img/stgigov.jpg&#34; alt=&#34;Stoycho Gigov&#34;&gt;&#xA;&lt;strong&gt;Role:&lt;/strong&gt; Founder, CEO, Partner Finance and Controlling&lt;br&gt;&#xA;&lt;strong&gt;LinkedIn Profile:&lt;/strong&gt; &lt;a href=&#34;https://www.linkedin.com/in/stoycho-gigov-2a0a1610/&#34;&gt;Visit LinkedIn&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Stoycho is an experienced management consultant and finance executive with a strong focus on global finance and controlling. His exceptional leadership skills, highlighted by his talent for building high performing finance teams and his impressive implementation excellence, have led to a track record of remarkable achievements.&lt;/p&gt;&#xA;&lt;p&gt;With extensive experience spanning 25 years, Stoycho has designed and implemented global profitability and cost transparency models, worldwide integrated profitability analysis, plant performance solutions, transfer pricing models and comprehensive ERP process integrations. He&amp;rsquo;s been instrumental in building multi-country controlling functions in Europe, Asia and North America.&lt;/p&gt;</description>
     </item>
     <item>
       <title>References</title>
-      <link>http://localhost:1313/references/</link>
+      <link>https://accessa.ch/references/</link>
       <pubDate>Sat, 06 Apr 2024 12:33:45 +1000</pubDate>
-      <guid>http://localhost:1313/references/</guid>
+      <guid>https://accessa.ch/references/</guid>
       <description></description>
     </item>
     <item>
       <title>Core Areas</title>
-      <link>http://localhost:1313/core/</link>
+      <link>https://accessa.ch/core/</link>
       <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/core/</guid>
+      <guid>https://accessa.ch/core/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h3 id=&#34;financial-management&#34;&gt;Financial Management&lt;/h3&gt;&#xA;&lt;p&gt;Strategic planning and risk management to optimize financial performance and enhance profitability. ACCESSA GmbH specializes in comprehensive financial management services designed to enhance operational efficiency.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Business Partnership&lt;/strong&gt;&lt;br&gt;&#xA;Acting as strategic advisors, we ensure that financial insights guide to business decisions at every level.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Financial and Process Control&lt;/strong&gt;&lt;br&gt;&#xA;Implementing rigorous financial control to enhance the integrity of your operational processes.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Financial Organizations&lt;/strong&gt;&lt;br&gt;&#xA;Structuring your financial operations to meet your business objectives efficiently.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/imprint/</link>
+      <link>https://accessa.ch/imprint/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/imprint/</guid>
+      <guid>https://accessa.ch/imprint/</guid>
       <description>&lt;h1 id=&#34;imprint&#34;&gt;Imprint&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;ACCESSA GmbH&lt;/strong&gt;&lt;br&gt;&#xA;Talstrasse 24&#xA;8852 Altendorf, SZ&lt;br&gt;&#xA;Switzerland&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:info@accessa.ch&#34;&gt;info@accessa.ch&lt;/a&gt;&lt;br&gt;&#xA;&lt;strong&gt;Phone:&lt;/strong&gt; +41 76 687 8628&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/privacy-policy/</link>
+      <link>https://accessa.ch/privacy-policy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/privacy-policy/</guid>
+      <guid>https://accessa.ch/privacy-policy/</guid>
       <description>&lt;h1 id=&#34;privacy-policy&#34;&gt;Privacy Policy&lt;/h1&gt;&#xA;&lt;h2 id=&#34;data-protection-statement-of-accessa-gmbh&#34;&gt;Data Protection Statement of ACCESSA GmbH&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Version effective as of 01.09.2023&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;With this Data Protection Statement, we, the ACCESSA GmbH (hereinafter &amp;ldquo;ACCESSA GmbH&amp;rdquo;, &amp;ldquo;we&amp;rdquo; or &amp;ldquo;us&amp;rdquo;), describe how we collect and further process personal data. This Data Protection Statement is not necessarily a comprehensive description of our data processing. It is possible that other data protection statements or General Terms and Conditions, Conditions of Participation, or similar documents are applicable to specific circumstances.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>http://localhost:1313/contact/</link>
+      <link>https://accessa.ch/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/contact/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;p&gt;Altendorf is located on the upper side of Lake Zurich, with excellent transport links from Zurich-Chur and Lucerne-St. Gallen.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;ACCESSA GmbH&lt;/strong&gt;&lt;br&gt;&#xA;Talstrasse 24&lt;br&gt;&#xA;8852 Altendorf, SZ&lt;br&gt;&#xA;Switzerland&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:info@accessa.ch&#34;&gt;info@accessa.ch&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/map.gif&#34; alt=&#34;Map showing ACCESSA location&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;To contact us, please fill out the form below.&lt;/p&gt;&#xA;&lt;form name=&#34;contact&#34; action=&#34;https://formspree.io/f/xayravby&#34; method=&#34;POST&#34;&gt;&#xA;    &lt;div class=&#34;input&#34;&gt;&#xA;        &lt;input type=&#34;text&#34; placeholder=&#34;Name&#34; name=&#34;name&#34; class=&#34;p-4 bg-gray-200 border border-gray-200 focus:outline-none focus:bg-white focus:border-gray-500&#34; required&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;input&#34;&gt;&#xA;        &lt;input type=&#34;text&#34; placeholder=&#34;Email&#34; name=&#34;mail&#34; class=&#34;p-4 bg-gray-200 border border-gray-200 focus:outline-none focus:bg-white focus:border-gray-500&#34; required&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;input&#34;&gt;&#xA;        &lt;input type=&#34;text&#34; placeholder=&#34;Title&#34; name=&#34;title&#34; class=&#34;p-4 bg-gray-200 border border-gray-200 focus:outline-none focus:bg-white focus:border-gray-500&#34; required&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;input&#34;&gt;&#xA;        &lt;textarea rows=&#34;5&#34; cols=&#34;30&#34; placeholder=&#34;Message&#34; name=&#34;message&#34; class=&#34;p-4 bg-gray-200 border border-gray-200 focus:outline-none focus:bg-white focus:border-gray-500&#34; required&gt;&lt;/textarea&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;input type=&#34;submit&#34; value=&#34;Submit&#34; class=&#34;px-8 py-2 duration-200 bg-gray-800 text-white cursor-pointer transition-colors hover:bg-gray-400&#34;&gt;&#xA;&lt;/form&gt;</description>
+      <guid>https://accessa.ch/contact/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;Altendorf is located on the upper side of Lake Zurich, with excellent transport links from Zurich-Chur and Lucerne-St. Gallen.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;ACCESSA GmbH&lt;/strong&gt;&lt;br&gt;&#xA;Talstrasse 24&lt;br&gt;&#xA;8852 Altendorf, SZ&lt;br&gt;&#xA;Switzerland&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:info@accessa.ch&#34;&gt;info@accessa.ch&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://accessa.ch/img/map.gif&#34; alt=&#34;Map showing ACCESSA location&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;To contact us, please fill out the form below.&lt;/p&gt;&#xA;&lt;form name=&#34;contact&#34; action=&#34;https://formspree.io/f/xayravby&#34; method=&#34;POST&#34;&gt;&#xA;    &lt;div class=&#34;input&#34;&gt;&#xA;        &lt;input type=&#34;text&#34; placeholder=&#34;Name&#34; name=&#34;name&#34; class=&#34;p-4 bg-gray-200 border border-gray-200 focus:outline-none focus:bg-white focus:border-gray-500&#34; required&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;input&#34;&gt;&#xA;        &lt;input type=&#34;text&#34; placeholder=&#34;Email&#34; name=&#34;mail&#34; class=&#34;p-4 bg-gray-200 border border-gray-200 focus:outline-none focus:bg-white focus:border-gray-500&#34; required&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;input&#34;&gt;&#xA;        &lt;input type=&#34;text&#34; placeholder=&#34;Title&#34; name=&#34;title&#34; class=&#34;p-4 bg-gray-200 border border-gray-200 focus:outline-none focus:bg-white focus:border-gray-500&#34; required&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;input&#34;&gt;&#xA;        &lt;textarea rows=&#34;5&#34; cols=&#34;30&#34; placeholder=&#34;Message&#34; name=&#34;message&#34; class=&#34;p-4 bg-gray-200 border border-gray-200 focus:outline-none focus:bg-white focus:border-gray-500&#34; required&gt;&lt;/textarea&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;input type=&#34;submit&#34; value=&#34;Submit&#34; class=&#34;px-8 py-2 duration-200 bg-gray-800 text-white cursor-pointer transition-colors hover:bg-gray-400&#34;&gt;&#xA;&lt;/form&gt;</description>
     </item>
   </channel>
 </rss>

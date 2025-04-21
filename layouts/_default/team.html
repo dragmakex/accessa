@@ -31,8 +31,11 @@
 
 {{ define "main" }}
 <div class="mx-auto my-10 max-w-6xl">
-  <div class="mx-3 px-2">
-    <h1 class="title text-3xl mb-10 text-center" style="font-size: 1.875rem !important;">{{.Title}}</h1>
+  <div class="mx-3 col-span-3 lg:col-span-2 px-2">
+    <h1 class="title text-3xl mb-4" style="font-size: 1.875rem !important;">{{.Title}}</h1>
+    <div class="content prose md:prose-base lg:prose-lg max-w-none py-1" style="font-size: 1.125rem;">
+      <hr>
+    </div>
     
     <p class="text-center p-2 mb-16 max-w-3xl mx-auto" style="font-size: 1.125rem;">
       At ACCESSA, our talented team is dedicated to delivering exceptional service and expertise. 
