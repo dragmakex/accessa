@@ -67,7 +67,7 @@ She holds a Master's degree in Economics, complemented by a certified APICS CSCP
 ---
 
 ## Alexander Staikov
-![Alexander Staikov](/img/as.jpg)  
+![Alexander Staikov](/img/as_2.jpeg)  
 **Role:** IT Consultant  
 **LinkedIn Profile:** [Visit LinkedIn](https://www.linkedin.com/in/alxstai)
 
