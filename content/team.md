@@ -42,7 +42,7 @@ Stoycho holds a Master's degree in Finance and Controlling, supplemented by an M
 ## Mariana Gigova
 ![Mariana Gigova](/img/mgigova.jpg)  
 **Role:** Managing Partner Supply Chain, CSCP  
-**LinkedIn Profile:** [Visit LinkedIn](https://www.linkedin.com/in/mariana-gigova-32196364/)
+**LinkedIn Profile:** [Visit LinkedIn](https://www.linkedin.com/in/mariana-gigova-mba-cscp-32196364/)
 
 An accomplished leader and consultant with over 20 years of experience in supply chain management, Mariana has a proven track record of optimising global operations, driving performance turnarounds and establishing robust supply chain functions across EMEA, APAC and NAFTA. With strong leadership skills and a deep understanding of customer-centric processes, she has successfully led transformations in both organisational structure and operational efficiency.
 
@@ -72,5 +72,28 @@ She holds a Master's degree in Economics, complemented by a certified APICS CSCP
 **LinkedIn Profile:** [Visit LinkedIn](https://www.linkedin.com/in/alxstai)
 
 Alexander Staikov is our expert IT Consultant with extensive experience in digital transformation and blockchain technology. His comprehensive expertise spans across enterprise solutions, system architecture, and innovative technology implementations. Alexander brings valuable insights to our clients' technical challenges while driving strategic IT initiatives forward.
+
+---
+
+## Prakash Muniyal
+![Prakash Muniyal](/img/prakash.jpg)
+
+**Role:** Our HR Affiliate Partner
+
+**Website:** [Visit InterimXpert](https://interimxpert.com/)
+
+Prakash brings over 30 years of global HR leadership experience to InterimXpert, gained in senior roles at organizations including JTI, Oriflame, and TE Connectivity. Based in Zurich, he has spent much of his career as an international HR executive, living and working across multiple countries.
+
+As Founder of InterimXpert, Prakash advises C-level leaders on complex people and organizational challenges tied to business transformation.
+
+**Areas of Focus:**
+- Organizational Design
+- M&A Integration Due Diligence and Planning
+- Large-Scale and Complex Global Restructuring
+- IPO HR Readiness
+- HR Operating Model Transformation
+- Strategic Workforce and Succession Planning
+
+Prakash focuses primarily on manufacturing, industrial technology, engineering, and PE-owned companies, where he partners with C-level leaders to ensure that organizational and human capital strategy keeps pace with strategic and transformation agendas—helping ensure that structural change translates into sustainable performance.
 
 ---
