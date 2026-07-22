@@ -66,15 +66,6 @@ She holds a Master's degree in Economics, complemented by a certified APICS CSCP
 
 ---
 
-## Alexander Staikov
-![Alexander Staikov](/img/as_2.jpeg)  
-**Role:** IT Consultant  
-**LinkedIn Profile:** [Visit LinkedIn](https://www.linkedin.com/in/alxstai)
-
-Alexander Staikov is our expert IT Consultant with extensive experience in digital transformation and blockchain technology. His comprehensive expertise spans across enterprise solutions, system architecture, and innovative technology implementations. Alexander brings valuable insights to our clients' technical challenges while driving strategic IT initiatives forward.
-
----
-
 ## Prakash Muniyal
 ![Prakash Muniyal](/img/prakash.jpg)
 
@@ -84,16 +75,25 @@ Alexander Staikov is our expert IT Consultant with extensive experience in digit
 
 Prakash brings over 30 years of global HR leadership experience to InterimXpert, gained in senior roles at organizations including JTI, Oriflame, and TE Connectivity. Based in Zurich, he has spent much of his career as an international HR executive, living and working across multiple countries.
 
-As Founder of InterimXpert, Prakash advises C-level leaders on complex people and organizational challenges tied to business transformation.
+As Founder of InterimXpert, Prakash advises C-level leaders on complex people and organizational challenges tied to business transformation. He focuses primarily on manufacturing, industrial technology, engineering, and PE-owned companies, where he partners with C-level leaders to ensure that organizational and human capital strategy keeps pace with strategic and transformation agendas, helping ensure that structural change translates into sustainable performance.
 
-**Areas of Focus:**
-- Organizational Design
-- M&A Integration Due Diligence and Planning
-- Large-Scale and Complex Global Restructuring
-- IPO HR Readiness
-- HR Operating Model Transformation
-- Strategic Workforce and Succession Planning
+**Expertise:**
+- **Organizational design** — structuring and aligning teams to drive the company's ambitions and future growth and profitability plans.
+- **M&A integration due diligence and planning** — aligning people, culture, and processes through mergers, acquisitions, and divestitures.
+- **Large-scale and complex global restructuring** — guiding leadership teams through workforce and organizational change with rigor and care.
+- **IPO HR readiness** — partnering with clients' HR, Finance, Legal, and external IPO advisors to accelerate HR and organizational readiness.
+- **HR operating model transformation** — acting as a sounding-board partner to CHROs as they build and develop business-centric HR functions that are data-driven and influential business partners.
+- **Strategic workforce and succession planning** — enabling a holistic assessment of current organizational capability and capacity gaps, with actionable workforce and succession plans.
 
-Prakash focuses primarily on manufacturing, industrial technology, engineering, and PE-owned companies, where he partners with C-level leaders to ensure that organizational and human capital strategy keeps pace with strategic and transformation agendas—helping ensure that structural change translates into sustainable performance.
+---
+
+## Alexander Staikov
+![Alexander Staikov](/img/as_2.jpeg)
+
+**Role:** IT Consultant
+
+**LinkedIn Profile:** [Visit LinkedIn](https://www.linkedin.com/in/alxstai)
+
+Alexander Staikov is our expert IT Consultant with extensive experience in digital transformation and blockchain technology. His comprehensive expertise spans across enterprise solutions, system architecture, and innovative technology implementations. Alexander brings valuable insights to our clients' technical challenges while driving strategic IT initiatives forward.
 
 ---
