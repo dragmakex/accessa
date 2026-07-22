@@ -371,6 +371,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <img src="/img/stgigov.jpg" alt="Stoycho Gigov">
           <div class="team-overlay">View Profile</div>
         </div>
+        <p class="team-card-title">Managing Partner Finance and Controlling</p>
       </div>
       
       
@@ -379,6 +380,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <img src="/img/mgigova.jpg" alt="Mariana Gigova">
           <div class="team-overlay">View Profile</div>
         </div>
+        <p class="team-card-title">Managing Partner Supply Chain</p>
       </div>
       
       
@@ -387,6 +389,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <img src="/img/prakash.jpg" alt="Prakash Muniyal">
           <div class="team-overlay">View Profile</div>
         </div>
+        <p class="team-card-title">Affiliate Partner HR</p>
       </div>
 
       <div class="team-card" onclick="toggleBio('alexander')">
@@ -394,6 +397,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <img src="/img/as_2.jpeg" alt="Alexander Staikov">
           <div class="team-overlay">View Profile</div>
         </div>
+        <p class="team-card-title">Senior IT consultant</p>
       </div>
     </div>
     
@@ -575,7 +579,6 @@ document.addEventListener('DOMContentLoaded', function() {
    
   .team-card {
     width: 280px;
-    height: 280px;
     background: white;
     border-radius: 8px;
     overflow: hidden;
@@ -594,7 +597,7 @@ document.addEventListener('DOMContentLoaded', function() {
   .team-image {
     position: relative;
     width: 100%;
-    height: 100%;
+    aspect-ratio: 1 / 1;
     overflow: hidden;
   }
   
@@ -627,6 +630,20 @@ document.addEventListener('DOMContentLoaded', function() {
   .team-card:hover .team-overlay {
     opacity: 1;
   }
+
+  .team-card-title {
+    min-height: 76px;
+    margin: 0;
+    padding: 0.9rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+  }
   
    
   @media (max-width: 768px) {
@@ -636,14 +653,18 @@ document.addEventListener('DOMContentLoaded', function() {
     
     .team-card {
       width: 220px;
-      height: 220px;
     }
   }
   
   @media (max-width: 480px) {
     .team-card {
       width: 180px;
-      height: 180px;
+    }
+
+    .team-card-title {
+      min-height: 88px;
+      padding: 0.75rem;
+      font-size: 0.9rem;
     }
   }
   
